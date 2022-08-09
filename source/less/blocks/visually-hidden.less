@@ -1,27 +1,35 @@
-// .visually-hidden {
-// }
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.visually-hidden {
+.visually-hidden{
   position: absolute;
-  overflow: hidden;
+  width: 1px;
+  height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-  width: 1px;
-  height: 1px;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  white-space: nowrap;
+  overflow: hidden;
 }
 
-.mobile-hidden {
-  display: none;
 
-  @media @desktop {
-    display: inline;
-  }
-}
+// .visually-hidden {
+//   position: absolute;
+//   overflow: hidden;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+//   width: 1px;
+//   height: 1px;
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   white-space: nowrap;
+// }
+
+// .mobile-hidden {
+//   display: none;
+
+//   @media @desktop {
+//     display: inline;
+//   }
+// }

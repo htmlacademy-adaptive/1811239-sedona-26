@@ -7,20 +7,43 @@
 
 // .menu__item {}
 
+.menu__item:first-child a {
+  border-top: none;
+}
+
+.menu__item:last-child a {
+  border-bottom: none;
+}
+
+.menu__link:not([href]) {
+  &:hover {
+    background-color: @bg-color-button--hover;
+  }
+  &:focus {
+    background-color: @bg-color-button--active;
+  }
+}
+
 .menu__link {
   text-decoration: none;
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 18px;
+  font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: @white;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #81b3d2;
+  background-color: @bg-color-main-button;
   border: 0;
+  border-top: 1px solid rgba(@white, 0.2);
+  border-bottom: 1px solid rgba(@black, 0.2);
 }
 
-// .menu__item--liner {}
+.menu__item--liner {
+  flex-grow: 1;
+}
