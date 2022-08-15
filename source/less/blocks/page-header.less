@@ -14,13 +14,17 @@
   height: 23px;
   margin-right: 20px;
 }
-// .page-header__logo-image {}
 
-// .page-header__menu-bar {}
-
-// .page-header__toggle {}
-
-// .page-header__toggle--closed {}
+.page-header__open-nav-button::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+}
 
 .page-header__image-wrapper {
   position: relative;
@@ -29,89 +33,80 @@
   background-color: @bg-color-back;
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: image-size("../img/bg-back-mobile@1x.jpg");
+  // background-image: url("../../img/background/bg-mountain-mobile.jpg");
 
-  @media @retina {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-  }
-
-  @media @tablet {
-    padding-top: 95px;
-    min-height: 195px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: cover;
-
-    @media @retina {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
-  }
-
-  @media @desktop {
-    padding-top: 103px;
-    min-height: 198px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-size: image-size("../img/bg-back-desktop@1x.jpg");
-
-    @media @retina {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
-  }
-
-  &--index {
-    padding-top: 90px;
-    min-height: 299px;
-    background-position: center;
-
-    @media @tablet {
-      padding-top: 78px;
-      min-height: 440px;
-    }
-
-    @media @desktop {
-      padding-top: 78px;
-      min-height: 440px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 10;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 26px;
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 26px;
-
-    @media @tablet {
-      height: 57px;
-      background-image: url("../img/bg-intro-triangle-tablet.svg");
-      background-size: 100% 57px;
-    }
-
-    @media @desktop {
-      height: 57px;
-      background-image: url("../img/bg-intro-triangle-desktop.svg");
-    }
-  }
+  // @media @retina {
+  //   background-image: url("../../img/background/bg-mountain-tablet.jpg");
 }
+
+// @media @tablet {
+//   padding-top: 95px;
+//   min-height: 195px;
+//   background-image: url("../../img/background/bg-mountain-tablet.jpg");
+//   background-size: cover;
+
+//   // @media @retina {
+//   //   background-image: url("../../img/background/bg-mountain-tablet.jpg");
+//   // }
+// }
+
+// @media @desktop {
+//   padding-top: 103px;
+//   min-height: 198px;
+//   background-image: url("./img/background/bg-mountain-desktop.jpg");
+//   // background-size: image-size("../../img/background/bg-mountain-desktop.jpg");
+
+//   // @media @retina {
+//   //   background-image: url("../../img/background/bg-mountain-desktop.jpg");
+//   // }
+// }
+
+// &--index {
+//   padding-top: 90px;
+//   min-height: 299px;
+//   background-position: center;
+
+//   @media @tablet {
+//     padding-top: 78px;
+//     min-height: 440px;
+//   }
+
+//   @media @desktop {
+//     padding-top: 78px;
+//     min-height: 440px;
+//   }
+// }
+
+// &::after {
+//   content: "";
+//   position: absolute;
+//   z-index: 10;
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 26px;
+
+//   @media @tablet {
+//     height: 57px;
+//     // background-image: url("../../img/background/bg-border-tablet.png");
+//     background-size: 100% 57px;
+//   }
+
+//   @media @desktop {
+//     height: 57px;
+//     // background-image: url("../../img/background/bg-border-desktop.png");
+//   }
+// }
 
 .page-header__logo {
-  // position: absolute;
-  // left: 45%;
-  // z-index: 2;
-  // margin-left: -83px;
-
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  // margin-top: -23px;
+  text-align: center;
+  display: block;
 }
 
+.page-header__logo-image {
+  // position: absolute;
+  position: revert;
+}
 .page-header__image {
   display: block;
   margin: 0 auto;
@@ -132,8 +127,4 @@
       height: 350px;
     }
   }
-}
-
-.page-header__logo-image {
-  padding-left: 89px;
 }

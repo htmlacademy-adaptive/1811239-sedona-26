@@ -15,7 +15,30 @@
 <body class="page-body">
   <header class="page-header boundary-general">
     <nav class="main-nav main-nav__opened">
-      <button class="main-nav__close-button" type="button">
+      <label class="main-nav__close-button" style="cursor:pointer">
+        <!-- <button class="page-header__toggle page-header__open-nav-button page-header__toggle--closed " type="button"><span
+          class="visually-hidden">Открыть
+          меню</span></button> -->
+        <input type="checkbox" class="main-nav__checkbox checkbox">
+
+        <ul class="main-nav__list menu">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class=" menu__item">
+            <a class="menu__link" href="photo-video.html">Фото и видео</a>
+          </li>
+          <li class="menu__item menu__item--liner">
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </label>
+      <!-- <button class="main-nav__close-button" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="main-nav__list menu">
@@ -23,7 +46,7 @@
           <a class="menu__link" href="index.html">Главная</a>
         </li>
         <li class=" menu__item">
-            <a class="menu__link" href="photo-video.html">Фото и видео</a>
+          <a class="menu__link" href="photo-video.html">Фото и видео</a>
         </li>
         <li class="menu__item menu__item--liner">
         </li>
@@ -33,28 +56,34 @@
         <li class="menu__item">
           <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
-      </ul>
+      </ul> -->
     </nav>
     <a class="page-header__logo">
-      <picture>
-        <source media="(min-width: 1150px)" srcset="./img/logo/main-logo-mobile.svg" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="./img/logo/main-logo-mobile.svg" type="image/svg+xml">
-        <img class="page-header__logo-image" src="./img/logo/main-logo-mobile.svg" alt="Лого треугольное Седона"
-          width="185" height="96">
-      </picture>
+      <img class="page-header__logo-image" src="./img/logo/main-logo-mobile.svg" alt="Лого треугольное Седона"
+        width="185" height="96">
     </a>
-    <div class="page-header__menu-bar">
-      <button class="page-header__toggle page-header__toggle--closed " type="button"><span
-          class="visually-hidden">Открыть
-          меню</span></button>
-    </div>
+    <!-- <div class="page-header__menu-bar">
+        <button class="page-header__toggle page-header__open-nav-button page-header__toggle--closed " type="button"><span
+            class="visually-hidden">Открыть
+            меню</span></button>
+      </div> -->
   </header>
   <main class="main boundary-general">
     <div class="intro">
       <div class="intro__wrapper">
-        <img class="intro__text-image" src="img/intro/intro-pic_mobile.png" width="282" height="214"
-          alt="Приветствие гранд каньона Седона">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/intro/intro-pic_descktop.png" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="./img/intro/intro-pic_tablet.png" type="image/svg+xml">
+          <img class="intro__text-image" src="img/intro/intro-pic_mobile.png" width="282" height="214"
+            alt="Лого гранд каньона Седона">
+        </picture>
       </div>
+      <!-- <picture class="intro__info--triangle"> -->
+      <source media="(min-width: 1150px)" srcset="./img/background/bg-border-desktop.svg" type="image/svg+xml">
+      <source media="(min-width: 768px)" srcset="./img/background/bg-border-tablet.svg" type="image/svg+xml">
+      <img class="intro__info--triangle" src="./img/background/bg-border-mobile.svg" width="282" height="214"
+        alt="Белая рамка">
+      <!-- </picture> -->
     </div>
     <article class="benefits">
       <header class="benefits-header">
@@ -62,75 +91,30 @@
         <p class="benefits-header__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </header>
       <ul class="benefits__list">
-        <li class="benefits__item benefits__item--blue benefits">
+        <li class="benefits__item benefits">
           <div class="benefits__item  benefits__info--triangle  benefits">
-            <div class="benefits__info-wrapper">
+            <img class="benefits-header__triangle" src="./img/background/bg-benefits-border-mobile.svg" width="320"
+              height="75" alt="белый бордер нижний">
+            <div class="benefits__info-wrapper benefits__item--blue">
               <h2 class="benefits__title">Настоящий городок</h2>
-              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number--white">№1</span></div>
-              <p class="benefis__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number--white">№1</span>
+              </div>
+              <p class="benefits__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
           </div>
           <div class="benefits__picture-wrapper">
             <picture>
-              <source media="(min-width: 1150px)" srcset="./img/background/back-city_descktop.jpg" type="image/svg+xml">
-              <source media="(min-width: 768px)" srcset="./img/background/back-bridge_tablet.jpg" type="image/svg+xml">
-              <source media="(min-width: 320px)" srcset="./img/background/back-city_mobile.jpg" type="image/svg+xml">
-              <img class="benefits__image" src="img/background/back-city_mobile.jpg" width="320" height="260"
+              <source media="(min-width: 1150px)" srcset="./img/background/bg-city-desktop.jpg" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="./img/background/bg-city-tablet.jpg" type="image/svg+xml">
+              <img class="benefits__image" src="./img/background/bg-ciry-mobile.jpg" width="320" height="260"
                 alt="Седона Сити">
             </picture>
-          </div>
-        </li>
-
-        <li class="benefits__item benefits__item--blue benefits__item--invert benefits">
-          <div class="benefits__info benefits__info--blue">
-            <div class="benefits__info-wrapper">
-              <h2 class="benefits__title">Там есть Мост дьявола</h2>
-              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number--white">№2</span></div>
-              <p class="benefits__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-          </div>
-          <div class="benefits__picture-wrapper">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="./img/background/back-bridge_decktop.jpg"
-                type="image/svg+xml">
-              <source media="(min-width: 768px)" srcset="./img/background/back-bridge_tablet.jpg" type="image/svg+xml">
-              <source media="(min-width: 320px)" srcset="./img/background/back-bridge_mobile.jpg" type="image/svg+xml">
-              <img class="benefits__image" src="img/background/back-bridge_mobile.jpg" width="320" height="260"
-                alt="Мост дьявола вид на красный каньон">
-            </picture>
-          </div>
-        </li>
-        <li class="benefits__item benefits">
-          <div class="benefits__info benefits__info--gray">
-            <div class="benefits__info-wrapper benefits__info-wrapper--gray">
-              <h2 class="benefits__title benefits__title--black">Небольшая площадь</h2>
-              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number">№3</span></div>
-              <p class="benefits__text">Все интересные места находятся очень близко</p>
-            </div>
-          </div>
-        </li>
-        <li class="benefits__item benefits">
-          <div class="benefits__info benefits__info--gray">
-            <div class="benefits__info-wrapper benefits__info-wrapper--gray">
-              <h2 class="benefits__title benefits__title--black">Красивая дорога</h2>
-              <div class="benefits__number-wrapper"><span class="benefits__number">№4</span></div>
-              <p class="benefits__text">Ехать в седону из лас-вегаса совсем не скучно!</p>
-            </div>
-          </div>
-        </li>
-        <li class="benefits__item benefits">
-          <div class="benefits__info">
-            <div class="benefits__info-wrapper benefits__info-wrapper--gray">
-              <h2 class="benefits__title benefits__title--black">Мало туристов</h2>
-              <div class="benefits__number-wrapper"><span class="benefits__number">№5</span></div>
-              <p class="benefits__text">Большинство едет в гранд каньон и толпится там</p>
-            </div>
           </div>
         </li>
         <li class="benefits__item benefits">
           <div class="benefits__info benefits__info--white">
             <section class="benefits__info-wrapper benefits__info-wrapper--white">
-              <h2 class="benefits__title benefits__title--black benefits__title--house">Жилье</h2>
+              <h2 class="benefits__title benefits__title--bonus benefits__title--house">Жилье</h2>
               <div class="benefits__number-wrapper visually-hidden"><span class="benefits__number">№6</span></div>
               <p class="benefits__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </section>
@@ -139,7 +123,7 @@
         <li class="benefits__item benefits">
           <div class="benefits__info benefits__info--white">
             <section class="benefits__info-wrapper benefits__info-wrapper--white">
-              <h2 class="benefits__title benefits__title--black benefits__title--food">Еда</h2>
+              <h2 class="benefits__title benefits__title--bonus benefits__title--food">Еда</h2>
               <div class="benefits__number-wrapper visually-hidden"><span class="benefits__number">№7</span></div>
               <p class="benefits__text">Всегда заказывайте Фирменный бургер, вы не разочаруетесь!</p>
             </section>
@@ -148,10 +132,55 @@
         <li class="benefits__item benefits">
           <div class="benefits__info benefits__info--white">
             <section class="benefits__info-wrapper benefits__info-wrapper--white">
-              <h2 class="benefits__title benefits__title--black benefits__title--gift">Сувениры</h2>
+              <h2 class="benefits__title benefits__title--bonus benefits__title--gift">Сувениры</h2>
               <div class="benefits__number-wrapper visually-hidden"><span class="benefits__number">№8</span></div>
               <p class="benefits__text">Не только китайского, но и местного производства!</p>
             </section>
+          </div>
+        </li>
+        <li class="benefits__item benefits__item--invert benefits">
+          <div class="benefits__info benefits__info--blue">
+            <div class="benefits__info-wrapper benefits__item--blue">
+              <h2 class="benefits__title">Там есть Мост дьявола</h2>
+              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number--white">№2</span>
+              </div>
+              <p class="benefits__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+          </div>
+          <div class="benefits__picture-wrapper">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="./img/background/bg-bridge-desktop.jpg" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="./img/background/bg-bridge-tablet.jpg" type="image/svg+xml">
+              <img class="benefits__image" src="./img/background/bg-bridge-mobile.jpg" width="320" height="260"
+                alt="Мост дьявола вид на красный каньон">
+            </picture>
+          </div>
+        </li>
+        <li class="benefits__item benefits">
+          <div class="benefits__info benefits__info--gray">
+            <div class="benefits__info-wrapper benefits__info-wrapper--gray">
+              <h2 class="benefits__title benefits__title--bonus">Небольшая площадь</h2>
+              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number">№3</span></div>
+              <p class="benefits__text">Все интересные места находятся очень близко</p>
+            </div>
+          </div>
+        </li>
+        <li class="benefits__item benefits">
+          <div class="benefits__info benefits__info--gray">
+            <div class="benefits__info-wrapper benefits__info-wrapper--gray">
+              <h2 class="benefits__title benefits__title--bonus">Красивая дорога</h2>
+              <div class="benefits__number-wrapper"><span class="benefits__number">№4</span></div>
+              <p class="benefits__text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+            </div>
+          </div>
+        </li>
+        <li class="benefits__item benefits">
+          <div class="benefits__info">
+            <div class="benefits__info-wrapper benefits__info-wrapper--gray">
+              <h2 class="benefits__title benefits__title--bonus">Мало туристов</h2>
+              <div class="benefits__number-wrapper"><span class="benefits__number">№5</span></div>
+              <p class="benefits__text">Большинство едет в гранд каньон и толпится там</p>
+            </div>
           </div>
         </li>
       </ul>
