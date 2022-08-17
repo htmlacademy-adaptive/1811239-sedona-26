@@ -1,0 +1,143 @@
+.benefits {
+  position: relative;
+
+  // @tablet-width display: flex;
+}
+
+.benefits__image {
+  width: 100%;
+}
+
+.benefits__item--blue {
+  background-color: @bg-color-main-button;
+  color: @white;
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  // display: flex;
+  flex-direction: column;
+}
+
+.benefits__text {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.benefits__text-recommendations {
+  text-align: left;
+}
+
+.benefits__title {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-bottom: 15px;
+  // padding: 0 20px;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.benefits__title--bonus {
+  text-align: center;
+}
+
+.benefits__info--triangle {
+  background-image: url("../../img/background/bg-benefits-border-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.benefits__info-wrapper {
+  padding: 26px 17px;
+  // margin-top: 3px;
+}
+
+.benefits__info-wrapper--gray {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: @bg-color-map;
+}
+
+.benefits__info-wrapper--white {
+  padding-left: 70px;
+}
+
+.benefits__number {
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.benefits__number::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9px;
+  height: 2px;
+  margin-top: -1px;
+  background-color: @font-color-base;
+}
+
+.benefits__number::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9px;
+  height: 2px;
+  margin-top: -1px;
+  background-color: @font-color-base;
+}
+
+.benefits__number-wrapper {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.benefits__item:last-child {
+  border-bottom: none;
+}
+
+.benefits__title--house::before {
+  content: "";
+  position: absolute;
+  // top: -10px;
+  // left: 11px;
+  top: -7px;
+  left: -46px;
+  width: 37px;
+  height: 36px;
+  background-image: url("../../img/icon/icon-house_mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.benefits__title--gift::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -46px;
+  width: 37px;
+  height: 36px;
+  background-image: url("../../img/icon/icon-gift_mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.benefits__title--food::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -46px;
+  width: 37px;
+  height: 36px;
+  background-image: url("../../img/icon/icon-burger_mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
