@@ -4,6 +4,7 @@
   list-style: none;
   text-align: center;
 }
+<<<<<<< HEAD
 .menu__item:first-child {
   border-top: none;
 }
@@ -12,28 +13,55 @@
 }
 .menu__link {
   text-decoration: none;
+=======
+.menu__item:first-child a {
+  border-top: none;
+}
+.menu__item:last-child a {
+  border-bottom: none;
+}
+.menu__link:not([href]):hover {
+  background-color: #669ec0;
+}
+.menu__link:not([href]):focus {
+  background-color: #5496bd;
+}
+.menu__link {
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
+<<<<<<< HEAD
   font-family: "PT Sans", "Arial", sans-serif;
+=======
+  font-family: "PT Sans";
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+<<<<<<< HEAD
   background-color: #81b3d2;
+=======
+  text-decoration: none;
+  background-color: #81B3D2;
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+<<<<<<< HEAD
 .menu__link:hover {
   background-color: #669ec0;
 }
 .menu__link:focus {
   background-color: #5496bd;
 }
+=======
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 .menu__item--liner {
   flex-grow: 1;
 }
@@ -43,6 +71,10 @@
   margin: 0;
 }
 .main-nav__list {
+<<<<<<< HEAD
+=======
+  display: none;
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -51,6 +83,7 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+<<<<<<< HEAD
   display: none;
 }
 .main-nav__checkbox {
@@ -58,17 +91,23 @@
 }
 .main-nav__checkbox:checked ~ .main-nav__list {
   display: block;
+=======
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 }
 .main-nav__opened {
   display: block;
 }
+<<<<<<< HEAD
 .main-nav__opened::after {
   display: none;
 }
+=======
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 .main-nav__closed {
   display: none;
 }
 .main-nav__close-button {
+<<<<<<< HEAD
   content: "";
   background-color: #81b3d2;
   top: 17px;
@@ -97,6 +136,19 @@
   height: 3px;
   background-color: #ffffff;
   transform: rotate(45deg);
+=======
+  width: 23px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(../../img/icon/cross-stick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-nav__opened::after {
+  display: none;
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 }
 .page-body {
   position: relative;
@@ -105,6 +157,7 @@
   padding: 0;
   font-size: 14px;
   line-height: 21px;
+<<<<<<< HEAD
   font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
   font-style: normal;
@@ -173,6 +226,13 @@
     height: 350px;
   }
 }
+=======
+  font-family: 'PT Sans';
+  color: #333333;
+  font-style: normal;
+}
+@import "./blocks/page-header.less";
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -181,21 +241,34 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
+<<<<<<< HEAD
+=======
+  -webkit-clip-path: inset(100%);
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 .intro {
   background-color: #ffffff;
+<<<<<<< HEAD
   background-image: url("../../img/background/bg-mountain-mobile.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 100%;
   height: 100%;
+=======
+  background-image: url(../img/bg-intro-triangle-mobile.svg), url(../img/background/back-mountain_mobile.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center top;
+  background-size: auto, cover;
+  height: 390px;
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 }
 .intro__wrapper {
   text-align: center;
   padding-top: 90px;
 }
+<<<<<<< HEAD
 .intro__wrapper--inner {
   padding-top: 52px;
 }
@@ -217,6 +290,8 @@
   height: 158px;
   background-position: left bottom, left bottom;
 }
+=======
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 @font-face {
   font-weight: normal;
   font-family: "PT Sans";
@@ -252,6 +327,7 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 .benefits-header__triangle {
   display: block;
   bottom: 0;
@@ -270,6 +346,19 @@
   background-color: #81b3d2;
   color: #ffffff;
 }
+=======
+.benefits {
+  @tablet-width display: flex;
+}
+.benefits__item--blue {
+  padding: 0px 18px 35px;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+.benefits__item:nth-child(1) {
+  order: 1;
+}
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 .benefits__list {
   margin: 0;
   padding: 0;
@@ -280,10 +369,13 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+<<<<<<< HEAD
   text-align: center;
 }
 .benefits__text-recommendations {
   text-align: left;
+=======
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 }
 .benefits__title {
   margin: 0;
@@ -294,6 +386,7 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 .benefits__title--bonus {
   text-align: center;
 }
@@ -304,6 +397,22 @@
 }
 .benefits__info-wrapper {
   padding: 26px 17px;
+=======
+.benefits__info--triangle {
+  background-image: url(../../img/background/bg-white-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: contain;
+  padding-top: calc((37 / 320) * 100%);
+}
+.benefits__info-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 45px 20px;
+}
+.benefits__number-wrapper {
+  margin-bottom: 25px;
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 }
 .benefits__info-wrapper--gray {
   padding-top: 30px;
@@ -311,6 +420,7 @@
   border-bottom: 1px solid #d6d6d6;
   background-color: #eeeeee;
 }
+<<<<<<< HEAD
 .benefits__info-wrapper--white {
   padding-left: 70px;
 }
@@ -352,6 +462,27 @@
   width: 37px;
   height: 36px;
   background-image: url("../../img/icon/icon-house_mobile.svg");
+=======
+.benefits__info-wrapper--gray .benefits__info-wrapper--gray:last-child {
+  border-bottom: none;
+}
+.benefits__info-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 45px 20px;
+}
+.benefits__info-wrapper--white {
+  padding-left: 70px;
+}
+.benefits__title--house::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -46px;
+  width: 37px;
+  height: 36px;
+  background-image: url(../../img/icon/icon-house_mobile.svg);
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -362,7 +493,11 @@
   left: -46px;
   width: 37px;
   height: 36px;
+<<<<<<< HEAD
   background-image: url("../../img/icon/icon-gift_mobile.svg");
+=======
+  background-image: url(../../img/icon/icon-gift_mobile.svg);
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -373,7 +508,11 @@
   left: -46px;
   width: 37px;
   height: 36px;
+<<<<<<< HEAD
   background-image: url("../../img/icon/icon-burger_mobile.svg");
+=======
+  background-image: url(../../img/icon/icon-burger_mobile.svg);
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -388,7 +527,11 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+<<<<<<< HEAD
   background-color: #81b3d2;
+=======
+  background-color: #81B3D2;
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
   border: 0;
 }
 .button:hover,
@@ -399,6 +542,7 @@
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
+<<<<<<< HEAD
 .search-hotel {
   margin: 0 auto;
   padding: 28px 6.25% 49px;
@@ -415,10 +559,13 @@
     padding-bottom: 66px;
   }
 }
+=======
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
 .search-hotel__title {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+<<<<<<< HEAD
   text-transform: uppercase;
   font-size: 21px;
   font-weight: 700;
@@ -603,3 +750,8 @@
   max-width: 100%;
   height: auto;
 }
+=======
+  font-weight: bold;
+  text-transform: uppercase;
+}
+>>>>>>> 68387c561c51b4181ff8a9efa87f0a102452660c
