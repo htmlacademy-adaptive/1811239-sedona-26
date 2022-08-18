@@ -17,7 +17,30 @@
 <body class="page-body">
   <header class="page-header boundary-general">
     <nav class="main-nav main-nav__opened">
-      <button class="main-nav__close-button" type="button">
+      <label class="main-nav__close-button" style="cursor:pointer">
+        <!-- <button class="page-header__toggle page-header__open-nav-button page-header__toggle--closed " type="button"><span
+          class="visually-hidden">Открыть
+          меню</span></button> -->
+        <input type="checkbox" class="main-nav__checkbox checkbox">
+
+        <ul class="main-nav__list menu">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class=" menu__item">
+            <a class="menu__link" href="photo-video.html">Фото и видео</a>
+          </li>
+          <li class="menu__item menu__item--liner">
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </label>
+      <!-- <button class="main-nav__close-button" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="main-nav__list menu">
@@ -25,7 +48,7 @@
           <a class="menu__link" href="index.html">Главная</a>
         </li>
         <li class=" menu__item">
-            <a class="menu__link" href="photo-video.html">Фото и видео</a>
+          <a class="menu__link" href="photo-video.html">Фото и видео</a>
         </li>
         <li class="menu__item menu__item--liner">
         </li>
@@ -35,32 +58,30 @@
         <li class="menu__item">
           <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
-      </ul>
+      </ul> -->
     </nav>
     <a class="page-header__logo">
-      <picture>
-        <source media="(min-width: 1150px)" srcset="./img/logo/main-logo-mobile.svg" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="./img/logo/main-logo-mobile.svg" type="image/svg+xml">
-        <img class="page-header__logo-image" src="./img/logo/main-logo-mobile.svg" alt="Лого треугольное Седона"
-          width="102" height="83">
-      </picture>
+      <img class="page-header__logo-image" src="./img/logo/main-logo-mobile.svg" alt="Лого треугольное Седона"
+        width="185" height="96">
     </a>
     <div class="page-header__menu-bar">
-      <button class="page-header__toggle page-header__toggle--closed " type="button"><span
-          class="visually-hidden">Открыть
-          меню</span></button>
-    </div>
+        <button class="page-header__open-nav-button" type="button"><span
+            class="visually-hidden">Открыть
+            меню</span></button>
+      </div>
   </header>
   <main class="main boundary-general">
     <div class="intro intro--inner">
       <div class="intro__wrapper intro__wrapper--inner">
-        <img class="intro__text-image" src="img/text-sedona.svg" width="280" height="213" alt="Промо текст Седона">
+        <img class="intro__text-image" src="./img/catalog/intro-gallery/sedona-mobile.svg" width="229" height="39" alt="Промо текст Седона">
       </div>
+      <img class="intro__triangle" src="./img/catalog/intro-gallery/catalog-triangle.svg" width="320"
+      height="75" alt="белый бордер нижний">
     </div>
     <article class="photo-video">
-      <header class="photo-video-header">
-        <h1 class="photo-video-header__title">Фото и видео</h1>
-        <p class="photo-video-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <header class="photo-video__header">
+        <h1 class="photo-video__title">Фото и видео</h1>
+        <p class="photo-video__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </header>
       <ul class="photo-video__gallery gallery">
         <li class="gallery__item gallery__item--landscape">
