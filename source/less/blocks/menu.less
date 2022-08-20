@@ -5,12 +5,13 @@
   text-align: center;
 }
 
-.menu__item:first-child {
-  border-top: none;
-}
-
-.menu__item:last-child {
-  border-bottom: none;
+.menu__item {
+  &:first-child {
+    border-top: none;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .menu__link {
@@ -30,14 +31,14 @@
   border: 0;
   border-top: 1px solid rgba(@white, 0.2);
   border-bottom: 1px solid rgba(@black, 0.2);
-}
 
-.menu__link:hover {
-  background-color: @bg-color-button--hover;
-}
+  &:hover {
+    background-color: @bg-color-button--hover;
+  }
 
-.menu__link:focus {
-  background-color: @bg-color-button--active;
+  &:focus {
+    background-color: @bg-color-button--active;
+  }
 }
 
 .menu__item--liner {
