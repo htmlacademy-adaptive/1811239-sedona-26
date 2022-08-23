@@ -1,10 +1,10 @@
 .benefits {
   position: relative;
 
-  // @tablet {
-  //   display: flex;
-  //   text-align: center;
-  // }
+  @media @tablet {
+    // display: flex;
+    text-align: center;
+  }
 }
 
 .benefits__image {
@@ -12,17 +12,17 @@
   vertical-align: bottom;
 }
 
-.benefits__item--blue {
-  background-color: @bg-color-main-button;
-  color: @white;
-}
-
 .benefits__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  // display: flex;
-  flex-direction: column;
+
+  @media @tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    // width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .benefits__text {
@@ -34,6 +34,10 @@
 
 .benefits__text-recommendations {
   text-align: left;
+
+  @media @tablet {
+    text-align: center;
+  }
 }
 
 .benefits__title {
@@ -45,6 +49,10 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media @tablet {
+    font-size: @line-height-base;
+  }
 }
 
 .benefits__title--bonus {
@@ -52,18 +60,38 @@
 }
 
 .benefits__info--triangle {
-  // background-image: url("../../img/background/bg-benefits-border-mobile.svg");
-  // background-repeat: no-repeat;
-  // background-size: contain;
   background-image: url("../../img/background/bg-border.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center top;
   background-size: auto, cover;
   height: 390px;
+
+  @media @tablet {
+    background-image: none;
+    padding: 0;
+  }
+}
+
+.benefits__info {
+  @media @tablet {
+    width: 256px;
+  }
 }
 
 .benefits__info-wrapper {
   padding: 26px 26px;
+}
+
+.benefits__item--blue {
+  background-color: @bg-color-main-button;
+  color: @white;
+
+  @media @tablet {
+    text-align: center;
+    color: @white;
+    background-color: @bg-color-main-button;
+    width: 65%;
+  }
 }
 
 .benefits__info-wrapper--gray {
@@ -73,10 +101,18 @@
   padding-right: 26px;
   border-bottom: 1px solid #d6d6d6;
   background-color: @bg-color-map;
+  // margin-left: 20px;
+  // margin-right: 20px;
 }
 
 .benefits__info-wrapper--white {
   padding-left: 70px;
+
+  @media @tablet {
+    padding-top: 160px;
+    padding-bottom: 65px;
+    text-align: center;
+  }
 }
 
 .benefits__number {
@@ -112,8 +148,14 @@
   text-align: center;
 }
 
-.benefits__item:last-child {
-  border-bottom: none;
+.benefits__item {
+  &__item:last-child {
+    border-bottom: none;
+  }
+
+  @media @tablet {
+    display: inline-flex;
+  }
 }
 
 .benefits__title--house::before {
@@ -128,6 +170,18 @@
   background-image: url("../../img/icon/icon-house.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media @tablet {
+    content: "";
+    position: absolute;
+    top: -93px;
+    left: 41px;
+    width: 75px;
+    height: 72px;
+    background-image: url(../../img/icon/icon-house.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .benefits__title--gift::before {
@@ -140,6 +194,18 @@
   background-image: url("../../img/icon/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media @tablet {
+    content: "";
+    position: absolute;
+    top: -93px;
+    left: 41px;
+    width: 64px;
+    height: 72px;
+    background-image: url("../../img/icon/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .benefits__title--food::before {
@@ -152,4 +218,17 @@
   background-image: url("../../img/icon/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media @tablet {
+    content: "";
+    position: absolute;
+    top: -93px;
+    left: 41px;
+    width: 75px;
+    height: 72px;
+    background-image: url("../../img/icon/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 }

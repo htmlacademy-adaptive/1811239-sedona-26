@@ -11,6 +11,16 @@
     height: 158px;
     background-position: bottom, center bottom;
   }
+
+  @media @tablet {
+    background-color: @bg-color-main-button;
+    background-image: url("../../img/background/bg-mountain-tablet.jpg"),
+      url("../../img/background/bg-border-tablet.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center top;
+    background-size: auto, cover;
+    height: 518px;
+  }
 }
 
 .intro__wrapper {
@@ -20,4 +30,11 @@
 
 .intro__wrapper--inner {
   padding-top: 52px;
+}
+
+.intro__text-image {
+  @media @tablet {
+    width: 461px;
+    height: 350px;
+  }
 }
