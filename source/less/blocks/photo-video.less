@@ -1,6 +1,11 @@
 .photo-video {
   width: 320px;
   margin: 0 auto;
+
+  @media @tablet {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .photo-video__description {
@@ -9,6 +14,19 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media @tablet {
+    padding: 0 110px;
+
+    font-weight: 400;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: @font-color-base;
+  }
 }
 
 .photo-video__header {
@@ -17,6 +35,13 @@
   padding-top: 40px;
   padding-bottom: 30px;
   text-align: center;
+
+  @media @tablet {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
 
 .photo-video__title {
@@ -27,6 +52,16 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media @tablet {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: @black;
+  }
 }
 
 .photo-video__gallery {
