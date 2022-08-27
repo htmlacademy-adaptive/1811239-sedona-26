@@ -5,9 +5,12 @@
   text-align: center;
 
   @media @tablet {
-    display: flex;
-    justify-content: space-between;
-    // margin: 0 -29px;
+    width: 768px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    align-items: center;
   }
 }
 
@@ -19,6 +22,14 @@
   &:last-child {
     border-bottom: none;
   }
+}
+
+.menu__item:nth-child(4n + 4) {
+  grid-column: 5 / 6;
+}
+
+.menu__item:nth-child(4n + 3) {
+  grid-column: 4 / 5;
 }
 
 .menu__link {
@@ -62,18 +73,12 @@
     &__link:hover,
     &__link:focus {
       color: #81b3d2;
-      background-color: #ffffff;
+      // background-color: #ffffff;
     }
 
     &__link:active {
       color: rgba(0, 0, 0, 1);
-      background-color: #ffffff;
-    }
-  }
-
-  .menu__item--spacer {
-    @media @tablet {
-      flex-grow: 1;
+      // background-color: #ffffff;
     }
   }
 }
