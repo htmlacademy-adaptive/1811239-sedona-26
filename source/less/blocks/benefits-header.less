@@ -1,9 +1,18 @@
 .benefits-header {
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+  padding: 26px 26px;
   padding-top: 40px;
   padding-bottom: 30px;
   text-align: center;
+
+  @media @tablet {
+    width: 490px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+  }
 }
 
 .benefits-header__title {
@@ -19,6 +28,7 @@
 .benefits-header__description {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: @font-size-base;
   line-height: 26px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}

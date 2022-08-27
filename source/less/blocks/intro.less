@@ -1,11 +1,26 @@
 .intro {
-  background-color: @white;
-  background-image: url(../img/bg-intro-triangle-mobile.svg),
-    url(../img/background/back-mountain_mobile.jpg);
+  background-color: @bg-color-main-button;
+  background-image: url("../img/background/bg-border.svg"),
+    url("../img/background/bg-mountain-mobile.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center top;
   background-size: auto, cover;
   height: 390px;
+
+  &--inner {
+    height: 158px;
+    background-position: bottom, center bottom;
+  }
+
+  @media @tablet {
+    background-color: @bg-color-main-button;
+    background-image: url("../img/background/bg-border-tablet.svg"),
+      url("../img/background/bg-mountain-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center top;
+    background-size: auto, cover;
+    height: 518px;
+  }
 }
 
 .intro__wrapper {
@@ -13,5 +28,13 @@
   padding-top: 90px;
 }
 
-// .intro__text-image {
-// }
+.intro__wrapper--inner {
+  padding-top: 52px;
+}
+
+.intro__text-image {
+  @media @tablet {
+    width: 461px;
+    height: 350px;
+  }
+}
