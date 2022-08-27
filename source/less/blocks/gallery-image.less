@@ -7,6 +7,12 @@
   display: block;
   // max-width: 100%;
   // height: auto;
+
+  @media @tablet {
+    display: block;
+    width: 648px;
+    height: 400px;
+  }
 }
 
 .gallery-image__author {
@@ -18,6 +24,13 @@
 
 .gallery-image__footer {
   padding: 12px 20px;
+
+  @media @tablet {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none ;
+  }
 }
 
 .gallery-image__title {
