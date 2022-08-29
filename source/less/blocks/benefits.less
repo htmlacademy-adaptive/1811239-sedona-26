@@ -2,18 +2,16 @@
   position: relative;
 
   @media @tablet {
-    // display: flex;
     text-align: center;
   }
 }
 
 .benefits__image {
   width: 100%;
-  vertical-align: bottom;
+  // vertical-align: bottom;
 
   @media @tablet {
-    width: 100%;
-    height: 100%;
+    height: 256px;
   }
 }
 
@@ -23,10 +21,16 @@
   list-style: none;
 
   @media @tablet {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    // width: 768px;
-    margin: 0 auto;
+    width: 768px;
+    margin-left: 26px;
+    margin-right: 26px;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // width: $tablet-width;
+    // margin: 0 auto;
   }
 }
 
@@ -80,6 +84,11 @@
 .benefits__info {
   @media @tablet {
     width: 256px;
+
+    &--triangle {
+      background-image: none;
+      padding: 0;
+    }
   }
 }
 
@@ -88,7 +97,6 @@
 
   @media @tablet {
     margin: 0;
-    // padding: 0;
     width: auto;
     padding: 40px 40px;
   }
@@ -102,7 +110,16 @@
     text-align: center;
     color: @white;
     background-color: @bg-color-main-button;
-    width: 65%;
+    width: 750px;
+  }
+}
+
+.benefits__info-wrapper {
+  @media @tablet {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    padding: 40px 40px;
   }
 }
 
@@ -129,7 +146,7 @@
 
 .benefits__item--invert {
   @media @tablet {
-    flex-direction: row-reverse;
+    // flex-direction: row-reverse;
   }
 }
 
@@ -167,16 +184,52 @@
 }
 
 .benefits__item {
-  &__item:last-child {
-    border-bottom: none;
-  }
-
   @media @tablet {
-    // display: inline-flex;
+    &__item:first-child {
+      grid-column: 1/4;
+    }
 
-    display: flex;
-    justify-content: flex-end;
-    margin-left: -50px;
+    &__item:last-child {
+      border-bottom: none;
+    }
+
+    &:nth-child(1) {
+      // order: 1;
+      display: flex;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(3) {
+      order: 3;
+    }
+
+    &:nth-child(4) {
+      order: 4;
+    }
+
+    &:nth-child(5) {
+      display: flex;
+      order: 5;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
+
+    &:nth-child(7) {
+      order: 7;
+    }
+
+    &:nth-child(8) {
+      order: 8;
+    }
+
+    &--invert {
+      flex-direction: row-reverse;
+    }
   }
 }
 
