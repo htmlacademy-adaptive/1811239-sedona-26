@@ -8,11 +8,16 @@
 
 .benefits__image {
   width: 100%;
-  // vertical-align: bottom;
+  margin-bottom: -5px;
 
   @media @tablet {
     height: 256px;
     width: 512px;
+  }
+
+  @media @desktop {
+    height: 259px;
+    width: 800px;
   }
 }
 
@@ -26,12 +31,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 768px;
-    margin-left: 26px;
     margin-right: 26px;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // width: $tablet-width;
-    // margin: 0 auto;
+  }
+
+  @media @desktop {
+    width: 1200px;
   }
 }
 
@@ -40,6 +44,10 @@
   padding: 0;
   text-transform: uppercase;
   text-align: center;
+
+  @media @desktop {
+    padding-right: 20px;
+  }
 }
 
 .benefits__text-recommendations {
@@ -61,6 +69,7 @@
 
   @media @tablet {
     font-size: @line-height-base;
+    padding: 0 33px;
   }
 }
 
@@ -70,22 +79,25 @@
   font-size: @line-height-base;
 
   @media @tablet {
+    font-size: 21px;
     text-align: center;
-
     font-style: normal;
     font-weight: 700;
-
     line-height: 26px;
     text-transform: uppercase;
   }
 }
 
 .benefits__info--triangle {
-  background-image: url("../../img/background/bg-border.svg");
+  background-image: url("../../img/background/last-border.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center top;
   background-size: auto, cover;
-  height: 390px;
+  // height: 37px;
+  // background-repeat: no-repeat;
+  // background-size: auto;
+  // background-size: contain;
+  // padding-top: calc((37/320)*100%);
 
   @media @tablet {
     background-image: none;
@@ -102,6 +114,10 @@
       padding: 0;
     }
   }
+
+  @media @desktop {
+    width: 400px;
+  }
 }
 
 .benefits__info-wrapper {
@@ -109,9 +125,13 @@
 
   @media @tablet {
     margin: 0;
-    // width: auto;
-    padding: 40px 40px 30px;
-    // width: 256px;
+    padding: 45px 20px 26px;
+    height: 185px;
+  }
+
+  @media @desktop {
+    padding: 37px 63px;
+    height: 185px;
   }
 }
 
@@ -135,10 +155,24 @@
   border-bottom: 1px solid #d6d6d6;
   background-color: @bg-color-map;
 
+  &--gray:last-child {
+    border: none;
+  }
+
   @media @tablet {
-    width: 256px;
-    height: 256px;
+    width: 205px;
+    height: 193px;
     border-bottom: none;
+  }
+
+  @media @desktop {
+    width: 342px;
+    height: 224px;
+    border-bottom: none;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 1px;
   }
 }
 
@@ -146,8 +180,8 @@
   padding-left: 70px;
 
   @media @tablet {
-    padding-top: 160px;
-    padding-bottom: 65px;
+    padding-top: 178px;
+    padding-bottom: 7px;
     text-align: center;
   }
 }
@@ -168,7 +202,7 @@
     position: absolute;
     top: 50%;
     width: 9px;
-    height: 2px;
+    height: 1px;
     margin-top: -1px;
     background-color: currentColor;
     left: -15px;
@@ -179,7 +213,7 @@
     position: absolute;
     top: 50%;
     width: 9px;
-    height: 2px;
+    height: 1px;
     margin-top: -1px;
     background-color: currentColor;
     right: -15px;
@@ -221,6 +255,7 @@
     &:nth-child(5) {
       display: flex;
       order: 5;
+      background-color: @bg-color-map;
     }
 
     &:nth-child(6) {
@@ -237,6 +272,13 @@
 
     &--invert {
       flex-direction: row-reverse;
+    }
+  }
+
+  @media @desktop {
+    &:nth-child(1) {
+      // width: 1200px;
+      display: flex;
     }
   }
 }
@@ -265,6 +307,18 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media @desktop {
+    content: "";
+    position: absolute;
+    top: -93px;
+    left: 91px;
+    width: 75px;
+    height: 78px;
+    background-image: url("../../img/icon/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .benefits__title--gift::before {
@@ -289,6 +343,18 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media @desktop {
+    content: "";
+    position: absolute;
+    top: -93px;
+    left: 89px;
+    width: 68px;
+    height: 75px;
+    background-image: url("../../img/icon/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .benefits__title--food::before {
@@ -309,6 +375,18 @@
     left: 41px;
     width: 75px;
     height: 72px;
+    background-image: url("../../img/icon/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media @desktop {
+    content: "";
+    position: absolute;
+    top: -93px;
+    left: 92px;
+    width: 78px;
+    height: 74px;
     background-image: url("../../img/icon/icon-burger.svg");
     background-repeat: no-repeat;
     background-size: cover;

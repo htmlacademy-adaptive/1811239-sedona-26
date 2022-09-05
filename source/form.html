@@ -46,8 +46,12 @@
   <main class="main boundary-general">
     <div class="intro intro--inner">
       <div class="intro__wrapper intro__wrapper--inner">
-        <img class="intro__text-image" src="./img/logo/logo-sedona.svg" width="229" height="39"
-          alt="Промо текст Седона">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/logo/logo-sedona.svg" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="./img/logo/logo-sedona.svg" type="image/svg+xml">
+          <img class="intro__text-image" src="./img/logo/logo-sedona.svg" width="280" height="213"
+          alt="Лого-промо текст Седона">
+        </picture>
       </div>
     </div>
     <section class="feedback">
@@ -98,7 +102,7 @@
           </fieldset>
         </div>
         <div class="form__container form__container--impression">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--lattice">
             <legend class="form__legend form__legend--impression">Ваше общее впечатление:</legend>
             <label class="form__selector-label">
               <input class="form__selector form__selector--radio visually-hidden" type="radio" name="radio"

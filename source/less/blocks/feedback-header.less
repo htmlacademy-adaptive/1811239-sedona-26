@@ -1,9 +1,16 @@
 .feedback-header {
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
   padding-top: 40px;
   padding-bottom: 30px;
   text-align: center;
+  margin-left: 47px;
+
+  @media @tablet {
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 
   &__title {
     font-family: @font-family-base;
@@ -15,6 +22,11 @@
     text-align: center;
     text-transform: uppercase;
     color: @black;
+
+    @media @tablet {
+      font-size: 30px;
+      line-height: 26px;
+    }
   }
 
   &__description {
@@ -26,5 +38,9 @@
     text-align: center;
     text-transform: uppercase;
     color: @font-color-base;
+
+    @media @desktop {
+      padding: 0 139px;
+    }
   }
 }

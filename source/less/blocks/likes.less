@@ -3,4 +3,27 @@
   width: 70px;
   justify-content: space-between;
   align-items: center;
+
+  @media @desktop {
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.likes__count {
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.likes__like-button {
+  border: none;
+
+  @media @desktop {
+    fill: @white;
+  }
 }

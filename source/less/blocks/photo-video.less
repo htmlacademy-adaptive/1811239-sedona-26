@@ -5,6 +5,11 @@
   @media @tablet {
     width: 768px;
     margin: 0 auto;
+    padding-bottom: 36px;
+  }
+
+  @media @desktop {
+    width: 100%;
   }
 }
 
@@ -24,7 +29,6 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-
     color: @font-color-base;
   }
 }
@@ -62,8 +66,17 @@
     text-transform: uppercase;
     color: @black;
   }
+
+  @media @desktop {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .photo-video__gallery {
   margin: 0 auto;
+
+  @media @desktop {
+    margin: 0 auto;
+  }
 }
