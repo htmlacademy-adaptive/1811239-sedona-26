@@ -196,8 +196,8 @@
 @media (min-width: 1200px) {
   .page-header {
     width: 1200px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .page-header__open-nav-button {
@@ -1299,8 +1299,8 @@
 @media (min-width: 1200px) {
   .feedback {
     width: 1200px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .feedback__form {
