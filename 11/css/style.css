@@ -196,8 +196,8 @@
 @media (min-width: 1200px) {
   .page-header {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-right: 1px;
+    padding-left: 1px;
   }
 }
 .page-header__open-nav-button {
