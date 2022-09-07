@@ -16,7 +16,7 @@
 .gallery__item {
   width: 320px;
   padding-top: 24px;
-  border-top: 1px solid #d6d6d6;
+  border-top: 1px solid @bg-color-striked;
 
   @media @tablet {
     width: 324px;
@@ -30,6 +30,14 @@
     margin: 0;
     border: none;
     padding-top: 0;
+  }
+}
+
+.gallery__item:last-child {
+  border-bottom: 1px solid @bg-color-striked;
+
+  @media @tablet {
+    border-bottom: none;
   }
 }
 

@@ -39,6 +39,22 @@
   }
 }
 
+.benefits__list::after {
+  content: "";
+  position: absolute;
+  top: 210px;
+  transform: translateX(-29%);
+  width: 0;
+  height: 0;
+  border-left: 384px solid transparent;
+  border-right: 384px solid transparent;
+  border-top: 45px solid @white;
+
+  @media @tablet {
+    display: none;
+  }
+}
+
 .benefits__text {
   margin: 0;
   padding: 0;
@@ -76,7 +92,11 @@
 .benefits__title--bonus {
   text-align: center;
   font-family: @font-family-base;
-  font-size: @line-height-base;
+  // font-size: @line-height-base;
+  padding-top: 11px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 
   @media @tablet {
     font-size: 21px;
@@ -85,23 +105,6 @@
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
-  }
-}
-
-.benefits__info--triangle {
-  background-image: url("../../img/background/last-border.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom, center top;
-  background-size: auto, cover;
-  // height: 37px;
-  // background-repeat: no-repeat;
-  // background-size: auto;
-  // background-size: contain;
-  // padding-top: calc((37/320)*100%);
-
-  @media @tablet {
-    background-image: none;
-    padding: 0;
   }
 }
 
@@ -126,24 +129,24 @@
   @media @tablet {
     margin: 0;
     padding: 45px 20px 26px;
-    height: 185px;
+    height: 205px;
   }
 
   @media @desktop {
     padding: 37px 63px;
-    height: 185px;
+    height: 197px;
   }
 }
 
 .benefits__item--blue {
-  background-color: @bg-color-main-button;
   color: @white;
+  background-color: @bg-color-main-button;
+  padding-top: 25px;
 
   @media @tablet {
     text-align: center;
     color: @white;
     background-color: @bg-color-main-button;
-    // width: 750px;
   }
 }
 
@@ -152,27 +155,38 @@
   padding-bottom: 30px;
   padding-left: 26px;
   padding-right: 26px;
-  border-bottom: 1px solid #d6d6d6;
   background-color: @bg-color-map;
-
-  &--gray:last-child {
-    border: none;
-  }
 
   @media @tablet {
     width: 205px;
     height: 193px;
-    border-bottom: none;
   }
 
   @media @desktop {
     width: 342px;
-    height: 224px;
-    border-bottom: none;
+    height: 174px;
     padding-top: 50px;
     padding-right: 30px;
     padding-left: 30px;
-    padding-bottom: 1px;
+  }
+}
+
+.benefits__info--gray::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 45px);
+  height: 1px;
+  background-color: #d6d6d6;
+
+  @media @tablet {
+    display: none;
+  }
+
+  @media @desktop {
+    display: none;
   }
 }
 

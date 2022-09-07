@@ -8,9 +8,9 @@
   height: 390px;
 
   @media @tablet {
-    background-color: @white;
-    background-image: url("../../img/background/bg-border-tablet.svg"),
-      url("../../img/background/bg-mountain-tablet.jpg");
+    background-color: @bg-color-main-button;
+    background-image: url("../img/background/bg-border-tablet.svg"),
+      url("../img/background/bg-mountain-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, center top;
     background-size: auto, cover;
@@ -18,25 +18,35 @@
   }
 
   @media @desktop {
+    background-color: @bg-color-main-button;
     width: 1200px;
     margin: 0 auto;
-    background-image: url("../../img/background/bg-border-desktop.svg"),
-      url("../../img/background/bg-mountain-desktop.jpg");
+    background-image: url("../img/background/bg-border-desktop.svg"),
+      url("../img/background/bg-mountain-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
   }
 }
 
 .intro--inner {
-  height: 226px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 161px;
   background-position: bottom, center bottom;
 
   @media @tablet {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
     height: 290px;
     background-position: left bottom, left bottom;
     background-size: contain, cover;
   }
 
   @media @desktop {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     height: 300px;
     background-position: left bottom, left bottom;
     background-size: contain, cover;
@@ -49,7 +59,7 @@
 }
 
 .intro__wrapper--inner {
-  padding-top: 9px;
+  padding-top: 54px;
 
   @media @tablet {
     padding-top: 88px;
