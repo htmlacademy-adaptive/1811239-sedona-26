@@ -7,6 +7,12 @@
   background-size: auto, cover;
   height: 390px;
 
+  @media @retina {
+    background-image: url("../img/background/bg-border.svg"),
+      url("../img/background/bg-mountain-mobile@2x.jpg");
+    // background-size: 320px auto;
+  }
+
   @media @tablet {
     background-color: @bg-color-main-button;
     background-image: url("../img/background/bg-border-tablet.svg"),
@@ -15,6 +21,12 @@
     background-position: bottom, center top;
     background-size: auto, cover;
     height: 518px;
+
+    @media @retina {
+      background-image: url("../img/background/bg-border-tablet.svg"),
+        url("../img/background/bg-mountain-tablet@2x.jpg");
+      // background-size: 768px auto;
+    }
   }
 
   @media @desktop {
@@ -24,6 +36,12 @@
     background-image: url("../img/background/bg-border-desktop.svg"),
       url("../img/background/bg-mountain-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
+
+    @media @retina {
+      background-image: url("../img/background/bg-border-desktop.svg"),
+        url("../img/background/bg-mountain-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
@@ -90,7 +108,7 @@
   }
 
   @media @desktop {
-    width: 460px;
+    // width: 460px;
     height: 350px;
   }
 }

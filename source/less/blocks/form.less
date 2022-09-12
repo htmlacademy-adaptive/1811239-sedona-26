@@ -26,7 +26,8 @@
     @media @tablet {
       font-size: 21px;
       line-height: 26px;
-      margin-bottom: 41px;
+      margin-bottom: 28px;
+      padding-bottom: 24px;
 
       &--sights {
         position: relative;
@@ -44,12 +45,15 @@
 
   &__input {
     width: 100%;
-    min-width: 0;
+    // min-width: 0;
     padding: 20px;
     font-weight: bold;
     font-size: 18px;
     background-color: @bg-color-body;
     border: none;
+    font-family: inherit;
+    height: 23px;
+    // width: 242px;
 
     &__input::placeholder {
       color: @black;
@@ -96,16 +100,17 @@
   min-height: 160px;
   resize: none;
   font-family: inherit;
-  color: rgba(0, 0, 0, 0.3);
+  // color: rgba(0, 0, 0, 0.3);
 
   @media @tablet {
     min-height: 160px;
     resize: none;
-    width: 683px;
+    width: 598px;
   }
 
   @media @desktop {
-    margin-left: 200px;
+    margin-left: 156px;
+    width: 768px;
   }
 }
 
@@ -123,6 +128,18 @@
   &--column {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+.form__group-wrapper {
+  width: 280px;
+
+  @media @tablet {
+    width: 282px;
+  }
+
+  @media @desktop {
+    width: 401px;
   }
 }
 
@@ -229,34 +246,34 @@
   position: absolute;
   content: "";
   height: 1px;
-  width: 311px;
+  width: 128px;
   flex-grow: 1;
   flex-shrink: 0;
   background: @border-color-item;
   top: 50%;
-  left: -366px;
+  left: -207px;
 }
 
 .form__legend--review::after {
   position: absolute;
   content: "";
   height: 1px;
-  width: 296px;
+  width: 128px;
   flex-grow: 1;
   flex-shrink: 0;
   background: @border-color-item;
   top: 50%;
-  right: -349px;
+  right: -205px;
 }
 
 .form__container--fullname {
   @media @tablet {
     position: relative;
     order: 1;
-    width: 280px;
-    padding-left: 3px;
+    width: 226px;
+    padding-left: 49px;
     margin-right: 49px;
-    padding-right: 52px;
+    padding-right: 60px;
   }
 
   @media @desktop {
@@ -274,9 +291,9 @@
     content: "";
     position: absolute;
     width: 1px;
-    height: 100%;
+    height: 95%;
     top: 0;
-    right: -44px;
+    right: -48px;
     left: auto;
     background-color: @bg-color-checkbox--active;
   }
@@ -302,8 +319,8 @@
     flex-grow: 1;
     flex-shrink: 0;
     background: @bg-color-checkbox--active;
-    top: 46%;
-    left: 114px;
+    top: 48%;
+    left: 51px;
   }
 
   @media @desktop {
@@ -328,8 +345,8 @@
     flex-grow: 1;
     flex-shrink: 0;
     background: @bg-color-checkbox--active;
-    top: 46%;
-    right: 67px;
+    top: 48%;
+    right: 53px;
   }
 
   @media @desktop {
@@ -349,15 +366,15 @@
   @media @tablet {
     padding-top: 20px;
     order: 2;
-    width: 298px;
-    padding-left: 46px;
+    width: 265px;
+    padding-left: 44px;
   }
 
   @media @desktop {
     padding-top: 21px;
     order: 2;
-    width: 431px;
-    padding-left: 70px;
+    width: 401px;
+    padding-left: 64px;
   }
 }
 
@@ -368,8 +385,8 @@
   }
 
   @media @desktop {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 17px;
+    padding-right: 96px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 34px;
@@ -389,6 +406,21 @@
     padding-top: 50px;
     order: 5;
     width: 100%;
+    padding-left: 50px;
+  }
+}
+
+.form__container--review::before {
+  @media @desktop {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 293px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background: @border-color-item;
+    top: 50%;
+    left: -365px;
   }
 }
 
@@ -400,14 +432,16 @@
     justify-content: space-between;
     width: 100%;
     color: @font-color-base;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   @media @desktop {
     padding-left: 123px;
-    padding-right: 111px;
-    margin-left: 100px;
+    margin-left: 86px;
     border-right-width: 100px;
     margin-right: 153px;
+    padding-right: 38px;
   }
 }
 
@@ -415,11 +449,14 @@
   @media @tablet {
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-left: 70px;
+    padding-right: 30px;
   }
 
   @media @desktop {
     display: flex;
     flex-direction: row;
+    padding-left: 120px;
   }
 }
 
@@ -433,7 +470,7 @@
     flex-shrink: 0;
     background: @bg-color-striked;
     top: 50%;
-    left: -142px;
+    left: -182px;
   }
 
   @media @desktop {
@@ -459,7 +496,7 @@
     flex-shrink: 0;
     background: @bg-color-striked;
     top: 50%;
-    right: -142px;
+    right: -180px;
   }
 
   @media @desktop {
@@ -496,7 +533,7 @@
 
   @media @desktop {
     flex-direction: row;
-    width: 959px;
+    width: 922px;
   }
 }
 
