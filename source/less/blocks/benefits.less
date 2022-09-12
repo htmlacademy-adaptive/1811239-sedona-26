@@ -41,14 +41,14 @@
 
 .benefits__list::after {
   content: "";
+  width: 320px;
+  height: 37px;
   position: absolute;
-  top: 210px;
-  transform: translateX(-29%);
-  width: 0;
-  height: 0;
-  border-left: 384px solid transparent;
-  border-right: 384px solid transparent;
-  border-top: 45px solid @white;
+  left: 0;
+  top: 216px;
+  background-image: url("../img/background/border.svg");
+  background-size: 320px 37px;
+  background-repeat: no-repeat;
 
   @media @tablet {
     display: none;
@@ -293,7 +293,6 @@
 
   @media @desktop {
     &:nth-child(1) {
-      // width: 1200px;
       display: flex;
     }
   }
@@ -302,8 +301,6 @@
 .benefits__title--house::before {
   content: "";
   position: absolute;
-  // top: -10px;
-  // left: 11px;
   top: -7px;
   left: -46px;
   width: 37px;
@@ -328,7 +325,7 @@
     content: "";
     position: absolute;
     top: -93px;
-    left: 91px;
+    left: 130px;
     width: 75px;
     height: 78px;
     background-image: url("../img/icon/icon-house.svg");
@@ -364,7 +361,7 @@
     content: "";
     position: absolute;
     top: -93px;
-    left: 89px;
+    left: 130px;
     width: 68px;
     height: 75px;
     background-image: url("../img/icon/icon-gift.svg");
@@ -400,7 +397,7 @@
     content: "";
     position: absolute;
     top: -93px;
-    left: 92px;
+    left: 130px;
     width: 78px;
     height: 74px;
     background-image: url("../img/icon/icon-burger.svg");

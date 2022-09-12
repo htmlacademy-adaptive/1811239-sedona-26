@@ -72,11 +72,11 @@
 
     &__link:hover,
     &__link:focus {
-      color: #81b3d2;
+      color: @bg-color-main-button;
     }
 
     &__link:active {
-      color: @font-color-item--active;
+      color: #b3b3b3;
     }
   }
 
@@ -90,15 +90,6 @@
   }
 }
 
-// .menu__link:not([href]) {
-//   color: @bg-color-video-icon;
-
-//   &:hover,
-//   &:focus {
-//     color: @bg-color-button--hover;
-//   }
-
-//   &:active {
-//     color: rgba(@bg-color-video-icon, 0.3);
-//   }
-// }
+.menu__link--current {
+  color: @font-color-item--active;
+}
