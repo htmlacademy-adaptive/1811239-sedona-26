@@ -16,11 +16,10 @@
 
 <body class="page-body">
   <header class="page-header boundary-general">
-    <nav class="main-nav main-nav__opened">
+    <nav class="main-nav main-nav--opened">
       <button class="main-nav__close-button" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
-
       <ul class="main-nav__list menu">
         <li class="menu__item">
           <a class="menu__link" href="index.html">Главная</a>
@@ -29,7 +28,7 @@
           <a class="menu__link" href="photo-video.html">Фото и видео</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="form.html">Форма отзыва</a>
+          <a class="menu__link  menu__link--current" href="form.html">Форма отзыва</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -52,7 +51,7 @@
           <source media="(min-width: 1150px)" srcset="./img/logo/logo-sedona.svg" type="image/svg+xml">
           <source media="(min-width: 768px)" srcset="./img/logo/logo-sedona.svg" type="image/svg+xml">
           <img class="intro__text-image" src="./img/logo/logo-sedona.svg" width="280" height="213"
-          alt="Лого-промо текст Седона">
+            alt="Лого-промо текст Седона">
         </picture>
       </div>
     </div>
@@ -83,7 +82,7 @@
             <div class="form__group-wrapper">
               <div class="form__group form__group--column form__group--communication form__group--phone">
                 <label class="form__label form__label--padding" for="telephone">
-                  <span class="form__label-hidden">Контактный&nbsp;</span>телефон*:
+                  <span class="form__label-hidden">Контактный телефон*:</span>
                 </label>
                 <div class="form__input-icon-group">
                   <input class="form__input form__input--contact-info" type="tel" id="telephone" name="telephone"
@@ -202,8 +201,8 @@
       </ul>
     </div>
     <p class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">Разработано</span>
         <svg class="copyright__icon-htmlacademy" width="27" height="34">
           <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>
@@ -223,7 +222,8 @@
     <div class="popup__wrapper">
       <div class="popup__content">
         <h2 class="popup__title">Ваш отзыв отправлен!</h2>
-        <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+          опубликуем его на сайте.</p>
       </div>
       <div class="popup__button-wrapper">
         <button class="popup__button button" type="button">закрыть окно</button>
