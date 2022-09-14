@@ -1,3 +1,71 @@
+.boundary-general {
+  position: relative;
 
-// .boundary-general {
-// }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 15px;
+    height: 100%;
+    box-shadow: -15px 0 10px -19px inset;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    box-shadow: 15px 0 10px -19px inset;
+  }
+
+  @media @tablet {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -15px;
+      width: 15px;
+      height: 100%;
+      box-shadow: -15px 0 10px -19px inset;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -15px;
+      top: 0;
+      width: 15px;
+      height: 100%;
+      box-shadow: 15px 0 10px -19px inset;
+    }
+  }
+
+  @media @desktop {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -15px;
+      width: 15px;
+      height: 100%;
+      box-shadow: -15px 0 10px -19px inset;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -15px;
+      top: 0;
+      width: 15px;
+      height: 100%;
+      box-shadow: 15px 0 10px -19px inset;
+    }
+  }
+}

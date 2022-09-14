@@ -5,6 +5,11 @@
   @media @tablet {
     width: 768px;
     margin: 0 auto;
+    padding-bottom: 36px;
+  }
+
+  @media @desktop {
+    width: 100%;
   }
 }
 
@@ -14,6 +19,7 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  padding-bottom: 12px;
 
   @media @tablet {
     padding: 0 110px;
@@ -24,8 +30,11 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-
     color: @font-color-base;
+  }
+
+  @media @desktop {
+    padding: 0 320px;
   }
 }
 
@@ -62,8 +71,17 @@
     text-transform: uppercase;
     color: @black;
   }
+
+  @media @desktop {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .photo-video__gallery {
   margin: 0 auto;
+
+  @media @desktop {
+    margin: 0 auto;
+  }
 }

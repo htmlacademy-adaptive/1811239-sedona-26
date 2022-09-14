@@ -1,0 +1,18 @@
+.line {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 36px);
+    height: 1px;
+    background-color: @border-color-item;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}

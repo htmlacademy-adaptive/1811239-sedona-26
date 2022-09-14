@@ -1,14 +1,18 @@
 .page-header {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: @white;
   position: relative;
-  margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media @tablet {
     width: 768px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-evenly;
-    // align-items: center;
+  }
+
+  @media @desktop {
+    width: 1200px;
+    // padding-right: 1px;
+    // padding-left: 1px;
   }
 }
 
@@ -21,7 +25,7 @@
   height: 23px;
   margin-right: 20px;
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 90%;
 }
 
@@ -48,65 +52,6 @@
   // @media @retina {
   //   background-image: url("../../img/background/bg-mountain-tablet.jpg");
 }
-
-// @media @tablet {
-//   padding-top: 95px;
-//   min-height: 195px;
-//   background-image: url("../../img/background/bg-mountain-tablet.jpg");
-//   background-size: cover;
-
-//   // @media @retina {
-//   //   background-image: url("../../img/background/bg-mountain-tablet.jpg");
-//   // }
-// }
-
-// @media @desktop {
-//   padding-top: 103px;
-//   min-height: 198px;
-//   background-image: url("./img/background/bg-mountain-desktop.jpg");
-//   // background-size: image-size("../../img/background/bg-mountain-desktop.jpg");
-
-//   // @media @retina {
-//   //   background-image: url("../../img/background/bg-mountain-desktop.jpg");
-//   // }
-// }
-
-// &--index {
-//   padding-top: 90px;
-//   min-height: 299px;
-//   background-position: center;
-
-//   @media @tablet {
-//     padding-top: 78px;
-//     min-height: 440px;
-//   }
-
-//   @media @desktop {
-//     padding-top: 78px;
-//     min-height: 440px;
-//   }
-// }
-
-// &::after {
-//   content: "";
-//   position: absolute;
-//   z-index: 10;
-//   left: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: 26px;
-
-//   @media @tablet {
-//     height: 57px;
-//     // background-image: url("../../img/background/bg-border-tablet.png");
-//     background-size: 100% 57px;
-//   }
-
-//   @media @desktop {
-//     height: 57px;
-//     // background-image: url("../../img/background/bg-border-desktop.png");
-//   }
-// }
 
 .page-header__logo {
   position: absolute;

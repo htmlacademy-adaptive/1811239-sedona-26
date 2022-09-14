@@ -1,13 +1,12 @@
 .page-footer {
-  padding-left: 26px;
-  padding-right: 26px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 40px;
   padding-bottom: 25px;
-<<<<<<< HEAD
-=======
 
   @media @tablet {
-    width: 768px;
+    width: 648px;
     margin: 0 auto;
     background-color: @white;
     padding: 40px 60px;
@@ -15,7 +14,12 @@
     justify-content: space-between;
     align-items: center;
   }
->>>>>>> a2ff6efb0e29e94248b3224e7007b7984da2a283
+
+  @media @desktop {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-footer__social {
@@ -23,6 +27,10 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 40px;
+
+  @media @tablet {
+    margin: 0;
+  }
 }
 
 .page-footer__copyright {
@@ -34,4 +42,8 @@
 .page-footer__hashtag {
   text-align: center;
   margin-bottom: 40px;
+
+  @media @tablet {
+    margin: 0;
+  }
 }

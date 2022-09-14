@@ -17,10 +17,17 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  // display: none;
+
+  @media @desktop {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+  }
 }
 
-.main-nav__opened {
+.main-nav--opened {
   display: block;
 
   &::after {

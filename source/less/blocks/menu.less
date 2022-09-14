@@ -72,12 +72,30 @@
 
     &__link:hover,
     &__link:focus {
-      color: #81b3d2;
-      // background-color: #ffffff;
+      color: @bg-color-main-button;
     }
 
     &__link:active {
-      color: rgba(0, 0, 0, 1);
+      color: #b3b3b3;
     }
+  }
+
+  @media @desktop {
+    border: none;
+    width: 233px;
+    font-size: 14px;
+    font-weight: bold;
+    color: @black;
+    background-color: @white;
+  }
+}
+
+.menu__link--current {
+  @media @tablet {
+    color: @font-color-item--active;
+  }
+
+  @media @desktop {
+    color: @font-color-item--active;
   }
 }
