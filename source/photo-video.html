@@ -15,17 +15,16 @@
 
 <body class="page-body">
   <header class="page-header boundary-general">
-    <nav class="main-nav main-nav__opened">
+    <nav class="main-nav main-nav--opened">
       <button class="main-nav__close-button" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
-
       <ul class="main-nav__list menu">
         <li class="menu__item">
           <a class="menu__link" href="index.html">Главная</a>
         </li>
         <li class=" menu__item">
-          <a class="menu__link" href="photo-video.html">Фото и видео</a>
+          <a class="menu__link  menu__link--current" href="photo-video.html">Фото и видео</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="form.html">Форма отзыва</a>
@@ -62,10 +61,13 @@
             <div class="gallery-image__wrapper">
               <a class="gallery-image__link" href="#">
                 <picture>
-                  <source media="(min-width:1200px)" srcset="./img/catalog/gallery/non-native-desktop.jpg 1x, ./img/catalog/gallery/non-native-desktop@2x.jpg 2x">
-                  <source media="(min-width:768px)" srcset="./img/catalog/gallery/non-native-tablet.jpg 1x, ./img/catalog/gallery/non-native-tablet@2x.jpg 2x">
-                  <img class="gallery-image__image" src="./img/catalog/gallery/non-native-mobile.jpg 1x, ./img/catalog/gallery/non-native-mobile@2x.jpg 2x" width="280"
-                    height="280" alt="неродные просторы">
+                  <source media="(min-width:1200px)"
+                    srcset="./img/catalog/gallery/non-native-desktop.jpg 1x, ./img/catalog/gallery/non-native-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                    srcset="./img/catalog/gallery/non-native-tablet.jpg 1x, ./img/catalog/gallery/non-native-tablet@2x.jpg 2x">
+                  <img class="gallery-image__pic" src="./img/catalog/gallery/non-native-mobile.jpg"
+                    srcset="./img/catalog/gallery/non-native-mobile@2x.jpg" width="280" height="280"
+                    alt="неродные просторы">
                 </picture>
               </a>
             </div>
@@ -90,10 +92,13 @@
             <div class="gallery-image__wrapper">
               <a class="gallery-image__link" href="#">
                 <picture>
-                  <source media="(min-width:1200px)" srcset="./img/catalog/gallery/local-vegetation-desktop.jpg 1x, ./img/catalog/gallery/local-vegetation-desktop@2x.jpg 2x">
-                  <source media="(min-width:768px)" srcset="./img/catalog/gallery/local-vegetation-tablet.jpg 1x, ./img/catalog/gallery/local-vegetation-tablet@2x.jpg 2x">
-                  <img class="gallery-image__image" src="./img/catalog/gallery/local-vegetation-mobile.jpg 1x, ./img/catalog/gallery/local-vegetation-mobile@2x.jpg 2x" width="280"
-                    height="280" alt="Местная растительность">
+                  <source media="(min-width:1200px)"
+                    srcset="./img/catalog/gallery/local-vegetation-desktop.jpg 1x, ./img/catalog/gallery/local-vegetation-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                    srcset="./img/catalog/gallery/local-vegetation-tablet.jpg 1x, ./img/catalog/gallery/local-vegetation-tablet@2x.jpg 2x">
+                  <img class="gallery-image__pic" src="./img/catalog/gallery/local-vegetation-mobile.jpg"
+                    srcset="./img/catalog/gallery/local-vegetation-mobile@2x.jpg" width="280" height="280"
+                    alt="Местная растительность">
                 </picture>
               </a>
             </div>
@@ -118,14 +123,17 @@
             <div class="gallery-image__wrapper">
               <a class="gallery-image__link" href="#">
                 <picture>
-                  <source media="(min-width:1200px)" srcset="./img/catalog/gallery/road-north-desktop.jpg 1x, ./img/catalog/gallery/road-north-desktop@2x.jpg 2x">
-                  <source media="(min-width:768px)" srcset="./img/catalog/gallery/road-north-tablet.jpg 1x, ./img/catalog/gallery/road-north-tablet@2x.jpg 2x">
-                  <img class="gallery-image__image" src="./img/catalog/gallery/road-north-mobile.jpg 1x, ./img/catalog/gallery/road-north-mobile@2x.jpg 2x" width="280"
-                    height="280" alt="дорога на север">
+                  <source media="(min-width:1200px)"
+                    srcset="./img/catalog/gallery/road-north-desktop.jpg 1x, ./img/catalog/gallery/road-north-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                    srcset="./img/catalog/gallery/road-north-tablet.jpg 1x, ./img/catalog/gallery/road-north-tablet@2x.jpg 2x">
+                  <img class="gallery-image__pic" src="./img/catalog/gallery/road-north-mobile.jpg"
+                    srcset="./img/catalog/gallery/road-north-mobile@2x.jpg" width="280" height="280"
+                    alt="дорога на север">
                 </picture>
               </a>
             </div>
-            <section class="gallery-image__footer gallery-image__footer--grayish">
+            <section class="gallery-image__footer">
               <div class="gallery-image__sign">
                 <h2 class="gallery-image__title">Дорога на север</h2>
                 <p class="gallery-image__author">Автор фото: Петр</p>
@@ -146,10 +154,13 @@
             <div class="gallery-image__wrapper">
               <a class="gallery-image__link" href="#">
                 <picture>
-                  <source media="(min-width:1200px)" srcset="./img/catalog/gallery/devils-bridge-desktop.jpg 1x, ./img/catalog/gallery/devils-bridge-desktop@2x.jpg 2x">
-                  <source media="(min-width:768px)" srcset="./img/catalog/gallery/devils-bridge-tablet.jpg 1x, ./img/catalog/gallery/devils-bridge-tablet@2x.jpg 2x">
-                  <img class="gallery-image__image" src="./img/catalog/gallery/devils-bridge-mobile.jpg 1x, ./img/catalog/gallery/devils-bridge-mobile@2x.jpg 2x" width="280"
-                    height="280" alt="Мост дьявола">
+                  <source media="(min-width:1200px)"
+                    srcset="./img/catalog/gallery/devils-bridge-desktop.jpg 1x, ./img/catalog/gallery/devils-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                    srcset="./img/catalog/gallery/devils-bridge-tablet.jpg 1x, ./img/catalog/gallery/devils-bridge-tablet@2x.jpg 2x">
+                  <img class="gallery-image__pic" src="./img/catalog/gallery/devils-bridge-mobile.jpg"
+                    srcset="./img/catalog/gallery/devils-bridge-mobile@2x.jpg" width="280" height="280"
+                    alt="Мост дьявола">
                 </picture>
               </a>
             </div>
@@ -221,8 +232,8 @@
       </ul>
     </div>
     <p class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">Разработано</span>
         <svg class="copyright__icon-htmlacademy" width="27" height="34">
           <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>

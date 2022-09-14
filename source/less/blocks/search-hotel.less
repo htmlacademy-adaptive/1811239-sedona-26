@@ -1,7 +1,7 @@
 .search-hotel {
   margin: 0 auto;
   text-align: center;
-  padding: 61px 26px 58px;
+  padding: 61px 20px 58px;
 
   @media @tablet {
     padding: 53px 0 58px;
@@ -51,11 +51,31 @@
 }
 
 .search-hotel__description {
+  font-family: @font-family-base;
+  font-weight: 400;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  text-transform: uppercase;
+  color: @font-color-base;
+
   @media @tablet {
     font-size: 14px;
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
     color: @font-color-base;
+    max-width: 435px;
+  }
+}
+
+.serch-hotel__one {
+  display: none;
+
+  @media @tablet {
+    display: block;
+  }
+
+  @media @desktop {
+    display: block;
   }
 }

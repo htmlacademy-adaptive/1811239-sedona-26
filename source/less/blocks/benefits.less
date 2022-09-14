@@ -128,20 +128,20 @@
 
   @media @tablet {
     margin: 0;
-    padding: 45px 20px 26px;
+    padding: 22px 20px 26px;
     height: 205px;
   }
 
   @media @desktop {
-    padding: 37px 63px;
+    padding: 30px 63px;
     height: 197px;
   }
 }
 
-.benefits__item--blue {
+.benefits__info--blue {
   color: @white;
   background-color: @bg-color-main-button;
-  padding-top: 25px;
+  padding-top: 1px;
 
   @media @tablet {
     text-align: center;
@@ -159,36 +159,38 @@
 
   @media @tablet {
     width: 205px;
-    height: 193px;
+    height: 100%;
+    padding-bottom: 62px;
   }
 
   @media @desktop {
     width: 342px;
-    height: 174px;
+    height: 100%;
     padding-top: 50px;
     padding-right: 30px;
     padding-left: 30px;
+    padding-bottom: 62px;
   }
 }
 
-.benefits__info--gray::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 45px);
-  height: 1px;
-  background-color: #d6d6d6;
+// .benefits__info--gray::after {
+//   // content: "";
+//   // position: absolute;
+//   // bottom: 0;
+//   // left: 50%;
+//   // transform: translateX(-50%);
+//   // width: calc(100% - 45px);
+//   // height: 1px;
+//   background-color: #d6d6d6;
 
-  @media @tablet {
-    display: none;
-  }
+//   @media @tablet {
+//     display: none;
+//   }
 
-  @media @desktop {
-    display: none;
-  }
-}
+//   @media @desktop {
+//     display: none;
+//   }
+// }
 
 .benefits__info-wrapper--white {
   padding-left: 70px;
@@ -199,12 +201,6 @@
     text-align: center;
     padding-right: 30px;
     padding-left: 30px;
-  }
-}
-
-.benefits__item--invert {
-  @media @tablet {
-    // flex-direction: row-reverse;
   }
 }
 
@@ -285,16 +281,22 @@
     &:nth-child(8) {
       order: 8;
     }
-
-    &--invert {
-      flex-direction: row-reverse;
-    }
   }
 
   @media @desktop {
     &:nth-child(1) {
       display: flex;
     }
+  }
+}
+
+.benefits__item--invert {
+  @media @tablet {
+    flex-direction: row-reverse;
+  }
+
+  @media @desktop {
+    flex-direction: row-reverse;
   }
 }
 

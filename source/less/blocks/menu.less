@@ -91,5 +91,11 @@
 }
 
 .menu__link--current {
-  color: @font-color-item--active;
+  @media @tablet {
+    color: @font-color-item--active;
+  }
+
+  @media @desktop {
+    color: @font-color-item--active;
+  }
 }

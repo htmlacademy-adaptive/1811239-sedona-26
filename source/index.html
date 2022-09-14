@@ -15,13 +15,13 @@
 
 <body class="page-body">
   <header class="page-header boundary-general">
-    <nav class="main-nav main-nav__opened">
+    <nav class="main-nav main-nav--opened">
       <button class="main-nav__close-button" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="main-nav__list menu">
         <li class="menu__item">
-          <a class="menu__link" href="index.html">Главная</a>
+          <a class="menu__link menu__link--current" href="index.html">Главная</a>
         </li>
         <li class=" menu__item">
           <a class="menu__link" href="photo-video.html">Фото и видео</a>
@@ -60,9 +60,9 @@
         <p class="benefits-header__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </header>
       <ul class="benefits__list">
-        <li class="benefits__item benefits">
-          <div class="benefits__item benefits">
-            <div class="benefits__info-wrapper benefits__item--blue">
+        <li class="benefits__item blue">
+          <div class="benefits__item">
+            <div class="benefits__info-wrapper">
               <h2 class="benefits__title benefits__title--bonus">Настоящий городок</h2>
               <div class="benefits__number-wrapper"><span class="benefits__number benefits__number--white">№1</span>
               </div>
@@ -82,7 +82,7 @@
             </picture>
           </div>
         </li>
-        <li class="benefits__item benefits">
+        <li class="benefits__item">
           <div class="benefits__info benefits__info--white">
             <section class="benefits__info-wrapper benefits__info-wrapper--white">
               <h2 class="benefits__title benefits__title--house">Жилье</h2>
@@ -92,7 +92,7 @@
             </section>
           </div>
         </li>
-        <li class="benefits__item benefits">
+        <li class="benefits__item">
           <div class="benefits__info benefits__info--white">
             <section class="benefits__info-wrapper benefits__info-wrapper--white">
               <h2 class="benefits__title benefits__title--food">Еда</h2>
@@ -102,7 +102,7 @@
             </section>
           </div>
         </li>
-        <li class="benefits__item benefits">
+        <li class="benefits__item">
           <div class="benefits__info benefits__info--white">
             <section class="benefits__info-wrapper benefits__info-wrapper--white">
               <h2 class="benefits__title benefits__title--gift">Сувениры</h2>
@@ -112,9 +112,9 @@
             </section>
           </div>
         </li>
-        <li class="benefits__item benefits__item--invert benefits">
+        <li class="benefits__item benefits__item--invert">
           <div class="benefits__info benefits__info--blue">
-            <div class="benefits__info-wrapper benefits__item--blue">
+            <div class="benefits__info-wrapper">
               <h2 class="benefits__title benefits__title--bonus">Там есть Мост дьявола</h2>
               <div class="benefits__number-wrapper"><span class="benefits__number benefits__number--white">№2</span>
               </div>
@@ -129,13 +129,13 @@
               <source media="(min-width: 768px)"
                 srcset="./img/background/bg-bridge-tablet.jpg 1x, ./img/background/bg-bridge-tablet@2x.jpg 2x"
                 type="image/svg+xml">
-              <img class="benefits__image"
-                src="./img/background/bg-bridge-mobile.jpg 1x, ./img/background/bg-bridge-mobile@2x.jpg 2x" width="320"
-                height="260" alt="Мост дьявола вид на красный каньон">
+              <img class="benefits__image" src="./img/background/bg-bridge-mobile.jpg"
+                srcset="./img/background/bg-bridge-mobile2@x.jpg" width="320" height="260"
+                alt="Мост дьявола вид на красный каньон">
             </picture>
           </div>
         </li>
-        <li class="benefits__item benefits">
+        <li class="benefits__item line">
           <div class="benefits__info  benefits__info--gray">
             <div class="benefits__info-wrapper benefits__info-wrapper--gray">
               <h2 class="benefits__title benefits__title--bonus">Небольшая площадь</h2>
@@ -144,7 +144,7 @@
             </div>
           </div>
         </li>
-        <li class="benefits__item benefits">
+        <li class="benefits__item line">
           <div class="benefits__info  benefits__info--gray">
             <div class="benefits__info-wrapper benefits__info-wrapper--gray">
               <h2 class="benefits__title benefits__title--bonus">Красивая дорога</h2>
@@ -153,7 +153,7 @@
             </div>
           </div>
         </li>
-        <li class="benefits__item benefits">
+        <li class="benefits__item">
           <div class="benefits__info">
             <div class="benefits__info-wrapper benefits__info-wrapper--gray">
               <h2 class="benefits__title benefits__title--bonus">Мало туристов</h2>
@@ -167,7 +167,8 @@
     <div class="search-hotel">
       <div class="search-hotel__wrapper">
         <h2 class="search-hotel__title">Заинтересовались?</h2>
-        <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
+        <p class="search-hotel__description">Укажите предполагаемые даты поездки, <br class="serch-hotel__one">и мы
+          покажем вам лучшие
           предложения гостиниц в Седоне</p>
         <a href="#" class="button search-hotel__button">Найти гостиницу</a>
       </div>
@@ -218,8 +219,8 @@
       </ul>
     </div>
     <p class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">Разработано</span>
         <svg class="copyright__icon-htmlacademy" width="27" height="34">
           <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>
