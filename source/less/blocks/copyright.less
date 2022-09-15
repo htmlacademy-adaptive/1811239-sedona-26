@@ -2,12 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media @tablet {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-  }
 }
 
 .copyright__text {
@@ -52,4 +46,17 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.copyright__link:hover {
+  color: @bg-color-main-button;
+}
+
+.copyright__link:focus {
+  color: @bg-color-main-button;
+}
+
+.copyright__link:active {
+  color: #b3b3b3;
+  opacity: 0.3;
 }
