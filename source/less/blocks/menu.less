@@ -57,6 +57,13 @@
   }
 
   @media @tablet {
+    color: @black;
+    background-color: @white;
+    border-top: none;
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: bold;
+
     &:hover {
       color: @bg-color-button--hover;
     }
@@ -69,43 +76,32 @@
       background-color: @white;
       color: inherit;
     }
-    // &:hover {
-    //   color: @white;
-    // }
-
-    // &:focus {
-    //   color: @bg-color-button--active;
-    // }
-
-    // &:active {
-    //   color: @font-color-item--active;
   }
 
-  // @media @tablet {
-  //   border: none;
-  //   width: 153px;
-  //   font-size: 14px;
-  //   font-weight: bold;
-  //   color: @black;
-  //   background-color: @white;
+  @media @desktop {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    border: none;
+    width: 233px;
+    font-size: 14px;
+    font-weight: bold;
+    color: @black;
+    background-color: @white;
 
-  //   &__link:hover,
-  //   &__link:focus {
-  //     color: @white;
-  //   }
+    &:hover {
+      color: @bg-color-button--hover;
+    }
 
-  //   &__link:active {
-  //     color: rgba(255, 255, 255, 0.3);
-  //   }
-}
+    &:active {
+      color: @bg-color-button--active;
+    }
 
-@media @desktop {
-  border: none;
-  width: 233px;
-  font-size: 14px;
-  font-weight: bold;
-  color: @black;
-  background-color: @white;
+    &:focus {
+      background-color: @white;
+      color: inherit;
+    }
+  }
 }
 
 .menu__link--current {
