@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="./favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/svguse.js" charset="utf-8" defer=""></script>
+  <script src="./js/svguse.js"></script>
 </head>
 
 <body class="page-body">
@@ -65,13 +65,16 @@
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend--fullname">Представьтесь:</legend>
             <p class="form__group form__group--fullname"> <label class="form__label" for="first-name">Имя*:</label>
-              <input class="form__input" type="text" name="first-name" placeholder="Имя" value="Петр" required="">
+              <input class="form__input" type="text" id="first-name" name="first-name" placeholder="Имя" value="Петр"
+                required="">
             </p>
             <p class="form__group form__group--fullname"> <label class="form__label" for="last-name">Фамилия*:</label>
-              <input class="form__input" type="text" name="last-name" placeholder="Фамилия" value="Иванов" required="">
+              <input class="form__input" type="text" id="last-name" name="last-name" placeholder="Фамилия"
+                value="Иванов" required="">
             </p>
             <p class="form__group form__group--fullname"> <label class="form__label" for="middle-name">Отчество:</label>
-              <input class="form__input" type="text" name="middle-name" placeholder="Отчество" value="Александрович">
+              <input class="form__input" type="text" id="middle-name" name="middle-name" placeholder="Отчество"
+                value="Александрович">
             </p>
           </fieldset>
         </div>
@@ -229,8 +232,8 @@
     </section>
   </div>
 
-  <script src="js/main-nav.js" charset="utf-8"></script>
-  <script src="js/popup.js" charset="utf-8"></script>
+  <script src="js/main-nav.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
