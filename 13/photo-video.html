@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Седона</title>
+  <link rel="icon" href="./favicon/32.ico">
+  <link rel="icon" href="./favicon/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <base href="https://htmlacademy-adaptive.github.io/1811239-sedona-26/13/">
+</head>
+
+<body class="page-body">
+  <header class="page-header boundary-general">
+    <nav class="main-nav main-nav--opened">
+      <button class="main-nav__close-button" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <ul class="main-nav__list menu">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">Главная</a>
+        </li>
+        <li class=" menu__item">
+          <a class="menu__link  menu__link--current" href="photo-video.html">Фото и видео</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="./img/logo/main-logo-mobile.svg" alt="Лого треугольное Седона"
+        width="185" height="96">
+    </a>
+    <div class="page-header__menu-bar">
+      <button class="page-header__open-nav-button" type="button"><span class="visually-hidden">Открыть
+          меню</span></button>
+    </div>
+  </header>
+  <div class="intro intro--inner boundary-general">
+    <div class="intro__wrapper intro__wrapper--inner">
+      <img class="intro__text-image" src="./img/logo/logo-sedona.svg" width="229" height="39" alt="logo Sedona">
+    </div>
+  </div>
+  <main class="main boundary-general">
+    <article class="photo-video">
+      <header class="photo-video__header">
+        <h1 class="photo-video__title">Фото и видео</h1>
+        <p class="photo-video__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
+          о политике и экономике.</p>
+      </header>
+      <ul class="photo-video__gallery gallery">
+        <li class="gallery__item gallery__item--landscape">
+          <article class="gallery-image">
+            <h2 class="visually-hidden">1</h2>
+            <div class="gallery-image__wrapper">
+              <a class="gallery-image__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="./img/catalog/gallery/non-native-desktop.webp 1x, ./img/catalog/gallery/non-native-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog/gallery/non-native-tablet.webp 1x, ./img/catalog/gallery/non-native-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/gallery/non-native-mobile.webp 1x, ./img/catalog/gallery/non-native-mobile@2x.webp 2x">
+                  <source media="(min-width:1200px)"
+                    srcset="./img/catalog/gallery/non-native-desktop.jpg 1x, ./img/catalog/gallery/non-native-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                    srcset="./img/catalog/gallery/non-native-tablet.jpg 1x, ./img/catalog/gallery/non-native-tablet@2x.jpg 2x">
+                  <img class="gallery-image__pic" src="./img/catalog/gallery/non-native-mobile.jpg"
+                    srcset="./img/catalog/gallery/non-native-mobile@2x.jpg" width="280" height="280"
+                    alt="неродные просторы">
+                </picture>
+              </a>
+            </div>
+            <section class="gallery-image__footer">
+              <div class="gallery-image__sign">
+                <h2 class="gallery-image__title">Неродные просторы</h2>
+                <p class="gallery-image__author">Автор фото: Борис</p>
+              </div>
+              <div class="gallery-image__likes likes">
+                <button class="likes__like-button" type="submit">
+                  <svg class="likes__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#like"></use>
+                  </svg>
+                </button>
+                <span class="likes__count">1350</span>
+              </div>
+            </section>
+          </article>
+        </li>
+        <li class="gallery__item">
+          <article class="gallery-image">
+            <h2 class="visually-hidden">2</h2>
+            <div class="gallery-image__wrapper">
+              <a class="gallery-image__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="./img/catalog/gallery/local-vegetation-desktop.webp 1x, ./img/catalog/gallery/local-vegetation-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog/gallery/local-vegetation-tablet.webp 1x, ./img/catalog/gallery/local-vegetation-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/gallery/local-vegetation-mobile.webp 1x, ./img/catalog/gallery/local-vegetation-mobile@2x.webp 2x">
+                  <source media="(min-width:1200px)"
+                    srcset="./img/catalog/gallery/local-vegetation-desktop.jpg 1x, ./img/catalog/gallery/local-vegetation-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                    srcset="./img/catalog/gallery/local-vegetation-tablet.jpg 1x, ./img/catalog/gallery/local-vegetation-tablet@2x.jpg 2x">
+                  <img class="gallery-image__pic" src="./img/catalog/gallery/local-vegetation-mobile.jpg"
+                    srcset="./img/catalog/gallery/local-vegetation-mobile@2x.jpg" width="280" height="280"
+                    alt="Местная растительность">
+                </picture>
+              </a>
+            </div>
+            <section class="gallery-image__footer">
+              <div class="gallery-image__sign">
+                <h2 class="gallery-image__title">Местная растительность</h2>
+                <p class="gallery-image__author">Автор фото: Борис</p>
+              </div>
+              <div class="gallery-image__likes likes">
+                <button class="likes__like-button" type="submit">
+                  <svg class="likes__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#like"></use>
+                  </svg>
+                </button>
+                <span class="likes__count">143</span>
+              </div>
+            </section>
+          </article>
+        </li>
+        <li class="gallery__item">
+          <article class="gallery-image">
+            <h2 class="visually-hidden">3</h2>
+            <div class="gallery-image__wrapper">
+              <a class="gallery-image__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="./img/catalog/gallery/road-north-desktop.webp 1x, ./img/catalog/gallery/road-north-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog/gallery/road-north-tablet.webp 1x, ./img/catalog/gallery/road-north-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/gallery/road-north-mobile.webp 1x, ./img/catalog/gallery/road-north-mobile@2x.webp 2x">
+                  <source media="(min-width:1200px)"
+                    srcset="./img/catalog/gallery/road-north-desktop.jpg 1x, ./img/catalog/gallery/road-north-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                    srcset="./img/catalog/gallery/road-north-tablet.jpg 1x, ./img/catalog/gallery/road-north-tablet@2x.jpg 2x">
+                  <img class="gallery-image__pic" src="./img/catalog/gallery/road-north-mobile.jpg"
+                    srcset="./img/catalog/gallery/road-north-mobile@2x.jpg" width="280" height="280"
+                    alt="дорога на север">
+                </picture>
+              </a>
+            </div>
+            <section class="gallery-image__footer">
+              <div class="gallery-image__sign">
+                <h2 class="gallery-image__title">Дорога на север</h2>
+                <p class="gallery-image__author">Автор фото: Петр</p>
+              </div>
+              <div class="gallery-image__likes likes">
+                <button class="likes__like-button" type="submit">
+                  <svg class="likes__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#like"></use>
+                  </svg>
+                </button>
+                <span class="likes__count">96</span>
+              </div>
+            </section>
+          </article>
+        </li>
+        <li class="gallery__item">
+          <article class="gallery-image">
+            <h2 class="visually-hidden">4</h2>
+            <div class="gallery-image__wrapper">
+              <a class="gallery-image__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="./img/catalog/gallery/devils-bridge-desktop.webp 1x, ./img/catalog/gallery/devils-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/catalog//gallery/devils-bridge-tablet.webp 1x, ./img/catalog/gallery/devils-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="./img/catalog/gallery/devils-bridge-mobile.webp 1x, ./img/catalog/gallery/devils-bridge-mobile@2x.webp 2x">
+                  <source media="(min-width:1200px)"
+                    srcset="./img/catalog/gallery/devils-bridge-desktop.jpg 1x, ./img/catalog/gallery/devils-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                    srcset="./img/catalog/gallery/devils-bridge-tablet.jpg 1x, ./img/catalog/gallery/devils-bridge-tablet@2x.jpg 2x">
+                  <img class="gallery-image__pic" src="./img/catalog/gallery/devils-bridge-mobile.jpg"
+                    srcset="./img/catalog/gallery/devils-bridge-mobile@2x.jpg" width="280" height="280"
+                    alt="Мост дьявола">
+                </picture>
+              </a>
+            </div>
+            <section class="gallery-image__footer">
+              <div class="gallery-image__sign">
+                <h2 class="gallery-image__title">Мост дьявола</h2>
+                <p class="gallery-image__author">Автор фото: Антон</p>
+              </div>
+              <div class="gallery-image__likes likes">
+                <button class="likes__like-button" type="submit">
+                  <svg class="likes__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#like"></use>
+                  </svg>
+                </button>
+                <span class="likes__count">254</span>
+              </div>
+            </section>
+          </article>
+        </li>
+
+      </ul>
+      <section class="video">
+        <header class="video__header">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+            очередной раз!</p>
+        </header>
+        <div class="video__clip">
+          <button class="video__button">
+            <span class="visually-hidden">Воспроизвести</span>
+          </button>
+          <div class="video__image-poster">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/catalog/intro-gallery/video-desktop.jpeg 1x, ./img/catalog/intro-gallery/video-desktop@2x.jpeg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/catalog/intro-gallery/video-tablet.jpeg 1x, ./img/catalog/intro-gallery/video-tablet@2x.jpeg 2x">
+              <img class="video__image" src="./img/catalog/gallery/turn-mobile.jpg"
+                srcset="./img/catalog/intro-gallery/video-mobile@2x.jpeg 2x" width="280" height="177" alt="Video">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="page-footer boundary-general">
+    <a href="#" class="page-footer__hashtag hashtag">#visitsedona</a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden"> Вконтакте</span>
+            <svg class="social__icon-vk" width="34" height="24">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+            <svg class="social__icon-telegram" width="24" height="24">
+              <use xlink:href="./img/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">YouTube</span>
+            <svg class="social__icon-youtube" width="34" height="24">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">Разработано</span>
+        <svg class="copyright__icon-htmlacademy" width="27" height="34">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
+    </p>
+  </footer>
+  <script src="js/main-nav.js"></script>
+</body>
+
+</html>
+<!-- 2 -->
