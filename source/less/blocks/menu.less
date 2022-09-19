@@ -50,47 +50,61 @@
   border-top: 1px solid rgba(@white, 0.2);
   border-bottom: 1px solid rgba(@black, 0.2);
 
-  &:hover {
-    color: @bg-color-main-button;
-  }
-
   &:focus {
-    color: @bg-color-button--active;
-  }
-
-  &:active {
-    color: @font-color-item--active;
+    background-color: @bg-color-button--hover;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
   }
 
   @media @tablet {
-    border: none;
-    width: 153px;
-    font-size: 14px;
-    font-weight: bold;
     color: @black;
     background-color: @white;
+    border-top: none;
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: bold;
 
-    &__link:hover,
-    &__link:focus {
-      color: @bg-color-main-button;
+    &:hover {
+      color: @bg-color-button--hover;
     }
 
-    &__link:active {
-      color: #b3b3b3;
+    &:active {
+      color: @bg-color-button--active;
+    }
+
+    &:focus {
+      background-color: @white;
+      color: inherit;
     }
   }
 
   @media @desktop {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
     border: none;
     width: 233px;
-    font-size: 14px;
-    font-weight: bold;
     color: @black;
     background-color: @white;
+
+    &:hover {
+      color: @bg-color-button--hover;
+    }
+
+    &:active {
+      color: @bg-color-button--active;
+    }
+
+    &:focus {
+      background-color: @white;
+      color: inherit;
+    }
   }
 }
 
 .menu__link--current {
+  color: @white;
+
   @media @tablet {
     color: @font-color-item--active;
   }
