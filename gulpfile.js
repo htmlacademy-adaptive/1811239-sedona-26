@@ -4,7 +4,9 @@ import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
-
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
+import htmlmin from 'gulp-htmlmin';
 // Styles
 
 export const styles = () => {
@@ -12,18 +14,20 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
 // Server
 
-const server = (done) => {
+function server(done) {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -34,12 +38,26 @@ const server = (done) => {
 
 // Watcher
 
-const watcher = () => {
+export const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+//HTML
+export const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+}
 
 export default gulp.series(
-  styles, server, watcher
+  styles, html, watcher, server
 );
+
+//Scripts
+
+export const script = () => {
+  return gulp.src('source/js/*.js')
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'))
+}
