@@ -10,7 +10,6 @@
   <link rel="apple-touch-icon" href="./favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.min.css">
-  <script src="./js/svguse.js"></script>
 </head>
 
 <body class="page-body">
@@ -217,12 +216,15 @@
             очередной раз!</p>
         </header>
         <div class="video__clip">
+          <button class="video__button">
+            <span class="visually-hidden">Воспроизвести</span>
+          </button>
           <div class="video__image-poster">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="./img/catalog/intro-gallery/video-desktop.jpeg 1x, ./img/catalog/intro-gallery/video-desktop@2x.jpeg 2x">
               <source media="(min-width: 768px)"
-                srcset="./img/catalog/intro-gallery/video-tablet.jpeg 1x, ./img/catalog/intrro-gallery/video-tablet@2x.jpeg 2x">
+                srcset="./img/catalog/intro-gallery/video-tablet.jpeg 1x, ./img/catalog/intro-gallery/video-tablet@2x.jpeg 2x">
               <img class="video__image" src="./img/catalog/gallery/turn-mobile.jpg"
                 srcset="./img/catalog/intro-gallery/video-mobile@2x.jpeg 2x" width="280" height="177" alt="Video">
             </picture>
