@@ -9,8 +9,8 @@
   <link rel="icon" href="./favicon/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/svguse.js" charset="utf-8" defer=""></script>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/svguse.js"></script>
 </head>
 
 <body class="page-body">
@@ -61,16 +61,20 @@
       </header>
       <ul class="benefits__list">
         <li class="benefits__item blue">
-          <div class="benefits__item">
-            <div class="benefits__info-wrapper">
-              <h2 class="benefits__title benefits__title--bonus">Настоящий городок</h2>
-              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number--white">№1</span>
-              </div>
-              <p class="benefits__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="benefits__info-wrapper">
+            <h2 class="benefits__title benefits__title--bonus">Настоящий городок</h2>
+            <div class="benefits__number-wrapper"><span class="benefits__number benefits__number--white">№1</span>
             </div>
+            <p class="benefits__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="benefits__picture-wrapper">
             <picture>
+              <!-- <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./img/background/bg-city-desktop.webp 1x, ./img/background/bg-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/background/bg-city-tablet.webp 1x, ./img/background/bg-city-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/background/bg-ciry-mobile.webp 1x, ./img/background/bg-ciry-mobile@2x.webp 2x"> -->
               <source media="(min-width: 1150px)"
                 srcset="./img/background/bg-city-desktop.jpg 1x, ./img/background/bg-city-desktop@2x.jpg 2x"
                 type="image/svg+xml">
@@ -123,6 +127,12 @@
           </div>
           <div class="benefits__picture-wrapper">
             <picture>
+              <!-- <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./img/background/bg-bridge-desktop.webp 1x, ./img/background/bg-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/background/bg-bridge-tablet.webp 1x, ./img/background/bg-bridge-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/background/bg-bridge-mobile.webp 1x, ./img/background/bg-bridge-mobile@2x.webp 2x"> -->
               <source media="(min-width: 1150px)"
                 srcset="./img/background/bg-bridge-desktop.jpg 1x, ./img/background/bg-bridge-desktop@2x.jpg 2x"
                 type="image/svg+xml">
@@ -167,7 +177,7 @@
     <div class="search-hotel">
       <div class="search-hotel__wrapper">
         <h2 class="search-hotel__title">Заинтересовались?</h2>
-        <p class="search-hotel__description">Укажите предполагаемые даты поездки, <br class="serch-hotel__one">и мы
+        <p class="search-hotel__description">Укажите предполагаемые даты поездки, <br class="search-hotel__one">и мы
           покажем вам лучшие
           предложения гостиниц в Седоне</p>
         <a href="#" class="button search-hotel__button">Найти гостиницу</a>
@@ -227,7 +237,7 @@
       </a>
     </p>
   </footer>
-  <script src="js/main-nav.js" charset="utf-8"></script>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>

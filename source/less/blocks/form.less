@@ -1,18 +1,9 @@
 .form {
-  &__container {
-    padding: 20px;
-    padding-bottom: 30px;
-    border-top: 1px solid #d6d6d6;
-
-    @media @tablet {
-      border-top: none;
-    }
-  }
-
   &__fieldset {
     margin: 0;
     padding: 0;
     border: 0;
+    margin-top: 27px;
   }
 
   &__legend {
@@ -37,6 +28,7 @@
   }
 
   &__label {
+    margin-left: 15px;
     margin-right: 15px;
     line-height: 26px;
     color: @font-color-base;
@@ -50,6 +42,33 @@
   }
 }
 
+.form__container {
+  padding: 20px;
+  padding-bottom: 7px;
+
+  @media @tablet {
+    border-top: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 320px;
+    height: 1px;
+    background-color: @border-color-photo;
+
+    @media @tablet {
+      display: none;
+    }
+
+    @media @desktop {
+      display: none;
+    }
+  }
+}
+
 .form__input {
   padding: 20px;
   font-weight: bold;
@@ -59,19 +78,21 @@
   font-family: inherit;
   height: 23px;
   width: 240px;
+  color: @black;
 
   &__input::placeholder {
-    color: @black;
+    color: rgba(0, 0, 0, 0.3);
   }
 
-  &__input:hover {
-    background-color: @border-color-photo;
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
   }
 
-  &__input:focus {
+  &:active,
+  &:focus {
+    outline: 4px solid @border-color-photo;
+    outline-offset: -4px;
     background-color: @white;
-    border: 4px solid #d5d5d5;
-    padding: 16px;
   }
 
   @media @tablet {
@@ -82,6 +103,10 @@
   @media @desktop {
     height: 23px;
     width: 420px;
+  }
+
+  &::placeholder {
+    color: @bg-color-video-icon;
   }
 }
 
@@ -119,10 +144,13 @@
 }
 
 .form__input--textarea {
-  min-height: 160px;
+  min-height: 118px;
   resize: none;
   font-family: inherit;
-  // color: rgba(0, 0, 0, 0.3);
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 
   @media @tablet {
     min-height: 160px;

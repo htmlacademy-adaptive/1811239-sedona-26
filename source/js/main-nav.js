@@ -2,8 +2,11 @@ const buttonClose = document.querySelector('.main-nav__close-button');
 const buttonOpen = document.querySelector('.page-header__open-nav-button');
 const menuElement = document.querySelector('.main-nav__list');
 
+menuElement.hidden = true;
+buttonClose.hidden = true;
+buttonOpen.hidden = false;
+
 buttonClose.addEventListener('click', () => {
-  //menuElement.classList.toggle('main-nav__close')
   menuElement.hidden = true;
   buttonClose.hidden = true;
   buttonOpen.hidden = false;
