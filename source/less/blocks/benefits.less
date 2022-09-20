@@ -8,7 +8,7 @@
 
 .benefits__image {
   width: 100%;
-  margin-bottom: -5px;
+  margin-bottom: -7px;
 
   @media @tablet {
     height: 256px;
@@ -16,7 +16,8 @@
   }
 
   @media @desktop {
-    height: 259px;
+    margin-bottom: -4px;
+    height: 258px;
     width: 800px;
   }
 }
@@ -56,13 +57,29 @@
 }
 
 .benefits__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   text-align: center;
 
   @media @desktop {
-    padding-right: 20px;
+    padding-right: 16px;
+    padding-left: 2px;
+  }
+}
+
+.benefits__text--space {
+  display: none;
+
+  @media @tablet {
+    display: none;
+  }
+
+  @media @desktop {
+    display: block;
   }
 }
 
@@ -71,6 +88,12 @@
 
   @media @tablet {
     text-align: center;
+  }
+
+  @media @desktop {
+    padding-left: 26px;
+    padding-right: 30px;
+    padding-top: 6px;
   }
 }
 
@@ -86,6 +109,25 @@
   @media @tablet {
     font-size: @line-height-base;
     padding: 0 33px;
+  }
+
+  @media @desktop {
+    padding-right: 33px;
+    padding-left: 27px;
+    padding-top: 14px;
+    padding-bottom: 2px;
+  }
+}
+
+.benefits__title--space {
+  display: none;
+
+  @media @tablet {
+    display: none;
+  }
+
+  @media @desktop {
+    display: block;
   }
 }
 
@@ -108,7 +150,10 @@
   }
 
   @media @desktop {
+    padding-left: 30px;
     padding-right: 45px;
+    margin-bottom: 9px;
+    padding-top: 10px;
   }
 }
 
@@ -139,9 +184,9 @@
   @media @desktop {
     padding-top: 38px;
     padding-right: 48px;
-    padding-bottom: 30px;
     padding-left: 62px;
-    height: 197px;
+    height: 134px;
+    padding-bottom: 24px;
   }
 }
 
@@ -173,31 +218,12 @@
   @media @desktop {
     width: 342px;
     height: 100%;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 62px;
+    padding-top: 32px;
+    padding-right: 35px;
+    padding-bottom: 59px;
+    padding-left: 36px;
   }
 }
-
-// .benefits__info--gray::after {
-//   // content: "";
-//   // position: absolute;
-//   // bottom: 0;
-//   // left: 50%;
-//   // transform: translateX(-50%);
-//   // width: calc(100% - 45px);
-//   // height: 1px;
-//   background-color: #d6d6d6;
-
-//   @media @tablet {
-//     display: none;
-//   }
-
-//   @media @desktop {
-//     display: none;
-//   }
-// }
 
 .benefits__info-wrapper--white {
   padding-left: 70px;
@@ -208,6 +234,13 @@
     text-align: center;
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  @media @desktop {
+    padding-top: 140px;
+    padding-right: 27px;
+    padding-bottom: 50px;
+    padding-left: 31px;
   }
 }
 
@@ -242,6 +275,10 @@
 .benefits__number-wrapper {
   margin-bottom: 25px;
   text-align: center;
+
+  @media @desktop {
+    margin-bottom: 26px;
+  }
 }
 
 .benefits__item {
@@ -310,10 +347,10 @@
 .benefits__title--house::before {
   content: "";
   position: absolute;
-  top: -7px;
-  left: -46px;
-  width: 37px;
-  height: 36px;
+  top: -89px;
+  left: 130px;
+  width: 76px;
+  height: 77px;
   background-image: url("../img/icon/icon-house.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -333,7 +370,7 @@
   @media @desktop {
     content: "";
     position: absolute;
-    top: -93px;
+    top: -85px;
     left: 130px;
     width: 75px;
     height: 78px;
@@ -359,8 +396,8 @@
     position: absolute;
     top: -93px;
     left: 62px;
-    width: 68px;
-    height: 72px;
+    width: 70px;
+    height: 77px;
     background-image: url("../img/icon/icon-gift.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -369,7 +406,7 @@
   @media @desktop {
     content: "";
     position: absolute;
-    top: -93px;
+    top: -88px;
     left: 130px;
     width: 68px;
     height: 75px;
@@ -405,8 +442,8 @@
   @media @desktop {
     content: "";
     position: absolute;
-    top: -93px;
-    left: 130px;
+    top: -87px;
+    left: 128px;
     width: 78px;
     height: 74px;
     background-image: url("../img/icon/icon-burger.svg");
