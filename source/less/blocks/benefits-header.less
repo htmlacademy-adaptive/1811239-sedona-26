@@ -1,34 +1,67 @@
 .benefits-header {
-  background-color: #ffffff;
+  background-color: @white;
   position: relative;
   margin: 0 auto;
-  padding: 26px 26px;
-  padding-top: 40px;
+  padding-top: 31px;
+  padding-right: 32px;
   padding-bottom: 30px;
+  padding-left: 26px;
   text-align: center;
 
   @media @tablet {
     width: 490px;
     margin: 0 auto;
     text-align: center;
-    padding: 50px 0;
+    padding-top: 48px;
+    padding-right: 2px;
+    padding-bottom: 56px;
+    padding-left: 4px;
+  }
+
+  @media @desktop {
+    padding-bottom: 42px;
+    padding-top: 59px;
+    padding-right: 5px;
   }
 }
 
 .benefits-header__title {
-  margin: 0;
+  margin: 0 0 31px;
   padding: 0;
   margin-bottom: 35px;
   font-weight: bold;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 27px;
   text-transform: uppercase;
+
+  @media @tablet {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    padding-left: 6px;
+    padding-right: 10px;
+    margin-bottom: 29px;
+  }
+
+  @media @desktop {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 27px;
+  }
 }
 
 .benefits-header__description {
   margin: 0;
   padding: 0;
   font-size: @font-size-base;
-  line-height: 26px;
+  line-height: 20px;
   text-transform: uppercase;
+  padding-left: 4px;
+
+  @media @tablet {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
