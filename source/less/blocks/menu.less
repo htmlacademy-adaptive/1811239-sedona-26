@@ -9,8 +9,12 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 10px;
+    column-gap: 2px;
     align-items: center;
+  }
+
+  @media @desktop {
+    column-gap: 10px;
   }
 }
 
@@ -63,6 +67,8 @@
     border-bottom: none;
     font-size: 14px;
     font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 18px;
 
     &:hover {
       color: @bg-color-button--hover;
