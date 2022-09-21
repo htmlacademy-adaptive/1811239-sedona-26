@@ -8,7 +8,7 @@
 
 .benefits__image {
   width: 100%;
-  margin-bottom: -7px;
+  margin-bottom: -12px;
 
   @media @tablet {
     height: 256px;
@@ -111,15 +111,15 @@
 }
 
 .benefits__title {
-  margin-left: 2px;
-  margin-top: 9px;
-  margin-right: 8px;
-  margin-bottom: 20px;
-  padding: 0;
   position: relative;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin-left: 2px;
+  margin-top: 9px;
+  margin-right: 8px;
+  margin-bottom: 13px;
+  padding: 0;
 
   @media @tablet {
     font-size: @line-height-base;
@@ -151,11 +151,14 @@
 .benefits__title--bonus {
   text-align: center;
   font-family: @font-family-base;
-  // font-size: @line-height-base;
-  padding-top: 11px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-top: 16px;
+  padding-left: 38px;
+  padding-right: 45px;
+  margin-bottom: 9px;
+  padding-top: 0;
 
   @media @tablet {
     font-size: 21px;
@@ -247,6 +250,9 @@
 
 .benefits__info-wrapper--white {
   padding-left: 62px;
+  padding-top: 25px;
+  padding-right: 26px;
+  padding-bottom: 2px;
 
   @media @tablet {
     padding-right: 20px;
@@ -260,6 +266,18 @@
     padding-top: 142px;
     padding-bottom: 1px;
     padding-left: 31px;
+  }
+}
+
+.benefits__info--white:first-child {
+  padding-bottom: 22px;
+
+  @media @tablet {
+    padding-bottom: 0;
+  }
+
+  @media @desktop {
+    padding-bottom: 0;
   }
 }
 
@@ -366,8 +384,8 @@
 .benefits__title--house::before {
   content: "";
   position: absolute;
-  top: -15px;
-  left: -43px;
+  top: -8px;
+  left: -44px;
   width: 37px;
   height: 36px;
   background-image: url("../img/icon/icon-house.svg");
