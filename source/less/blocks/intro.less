@@ -10,7 +10,6 @@
   @media @retina {
     background-image: url("../img/background/bg-border.svg"),
       url("../img/background/bg-mountain-mobile@2x.jpg");
-    // background-size: 320px auto;
   }
 
   @media @tablet {
@@ -20,12 +19,11 @@
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, center top;
     background-size: auto, cover;
-    height: 518px;
+    height: 517px;
 
     @media @retina {
       background-image: url("../img/background/bg-border-tablet.svg"),
         url("../img/background/bg-mountain-tablet@2x.jpg");
-      // background-size: 768px auto;
     }
   }
 
@@ -74,6 +72,14 @@
 .intro__wrapper {
   text-align: center;
   padding-top: 90px;
+
+  @media @tablet {
+    padding-top: 76px;
+  }
+
+  @media @desktop {
+    padding-top: 78px;
+  }
 }
 
 .intro__wrapper--inner {
@@ -84,7 +90,7 @@
   }
 
   @media @desktop {
-    padding-top: 95px;
+    padding-top: 102px;
   }
 }
 

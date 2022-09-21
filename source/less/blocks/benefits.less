@@ -8,7 +8,7 @@
 
 .benefits__image {
   width: 100%;
-  margin-bottom: -5px;
+  margin-bottom: -7px;
 
   @media @tablet {
     height: 256px;
@@ -16,7 +16,8 @@
   }
 
   @media @desktop {
-    height: 259px;
+    margin-bottom: -6px;
+    height: 263px;
     width: 800px;
   }
 }
@@ -45,7 +46,7 @@
   height: 37px;
   position: absolute;
   left: 0;
-  top: 216px;
+  top: 204px;
   background-image: url("../img/background/border.svg");
   background-size: 320px 37px;
   background-repeat: no-repeat;
@@ -56,13 +57,41 @@
 }
 
 .benefits__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   text-align: center;
 
   @media @desktop {
-    padding-right: 20px;
+    padding-right: 16px;
+    padding-left: 2px;
+  }
+}
+
+.benefits__text--space {
+  display: none;
+
+  @media @tablet {
+    display: none;
+  }
+
+  @media @desktop {
+    display: block;
+  }
+}
+
+.benefits__text--interval {
+  display: none;
+
+  @media @tablet {
+    display: none;
+  }
+
+  @media @desktop {
+    display: block;
   }
 }
 
@@ -71,21 +100,51 @@
 
   @media @tablet {
     text-align: center;
+    padding-top: 8px;
+  }
+
+  @media @desktop {
+    padding-left: 26px;
+    padding-right: 30px;
+    padding-top: 6px;
   }
 }
 
 .benefits__title {
-  margin: 0;
+  margin-left: 2px;
+  margin-top: 9px;
+  margin-right: 8px;
+  margin-bottom: 20px;
   padding: 0;
   position: relative;
-  margin-bottom: 15px;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 
   @media @tablet {
     font-size: @line-height-base;
-    padding: 0 33px;
+    padding-top: 33px;
+    padding-right: 33px;
+    padding-left: 33px;
+  }
+
+  @media @desktop {
+    padding-right: 33px;
+    padding-left: 27px;
+    padding-top: 14px;
+    padding-bottom: 2px;
+  }
+}
+
+.benefits__title--space {
+  display: none;
+
+  @media @tablet {
+    display: none;
+  }
+
+  @media @desktop {
+    display: block;
   }
 }
 
@@ -106,6 +165,13 @@
     line-height: 26px;
     text-transform: uppercase;
   }
+
+  @media @desktop {
+    padding-left: 30px;
+    padding-right: 45px;
+    margin-bottom: 9px;
+    padding-top: 10px;
+  }
 }
 
 .benefits__info {
@@ -124,17 +190,23 @@
 }
 
 .benefits__info-wrapper {
-  padding: 26px 26px;
+  padding-bottom: 43px;
+  padding-top: 26px;
+  padding-right: 26px;
+  padding-left: 27px;
 
   @media @tablet {
     margin: 0;
-    padding: 22px 20px 26px;
-    height: 205px;
+    padding: 28px 17px 27px;
+    height: 198px;
   }
 
   @media @desktop {
-    padding: 30px 63px;
-    height: 197px;
+    padding-top: 38px;
+    padding-right: 48px;
+    padding-left: 62px;
+    height: 164px;
+    padding-bottom: 24px;
   }
 }
 
@@ -166,41 +238,28 @@
   @media @desktop {
     width: 342px;
     height: 100%;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 62px;
+    padding-top: 32px;
+    padding-right: 35px;
+    padding-bottom: 59px;
+    padding-left: 36px;
   }
 }
 
-// .benefits__info--gray::after {
-//   // content: "";
-//   // position: absolute;
-//   // bottom: 0;
-//   // left: 50%;
-//   // transform: translateX(-50%);
-//   // width: calc(100% - 45px);
-//   // height: 1px;
-//   background-color: #d6d6d6;
-
-//   @media @tablet {
-//     display: none;
-//   }
-
-//   @media @desktop {
-//     display: none;
-//   }
-// }
-
 .benefits__info-wrapper--white {
-  padding-left: 70px;
+  padding-left: 62px;
 
   @media @tablet {
-    padding-top: 178px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 127px;
     padding-bottom: 7px;
-    text-align: center;
-    padding-right: 30px;
-    padding-left: 30px;
+  }
+
+  @media @desktop {
+    padding-right: 22px;
+    padding-top: 142px;
+    padding-bottom: 1px;
+    padding-left: 31px;
   }
 }
 
@@ -233,8 +292,12 @@
 }
 
 .benefits__number-wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   text-align: center;
+
+  @media @desktop {
+    margin-bottom: 26px;
+  }
 }
 
 .benefits__item {
@@ -303,8 +366,8 @@
 .benefits__title--house::before {
   content: "";
   position: absolute;
-  top: -7px;
-  left: -46px;
+  top: -15px;
+  left: -43px;
   width: 37px;
   height: 36px;
   background-image: url("../img/icon/icon-house.svg");
@@ -314,8 +377,8 @@
   @media @tablet {
     content: "";
     position: absolute;
-    top: -93px;
-    left: 59px;
+    top: -67px;
+    left: 70px;
     width: 75px;
     height: 72px;
     background-image: url("../img/icon/icon-house.svg");
@@ -326,7 +389,7 @@
   @media @desktop {
     content: "";
     position: absolute;
-    top: -93px;
+    top: -85px;
     left: 130px;
     width: 75px;
     height: 78px;
@@ -350,10 +413,10 @@
   @media @tablet {
     content: "";
     position: absolute;
-    top: -93px;
-    left: 62px;
-    width: 68px;
-    height: 72px;
+    top: -69px;
+    left: 68px;
+    width: 70px;
+    height: 77px;
     background-image: url("../img/icon/icon-gift.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -362,7 +425,7 @@
   @media @desktop {
     content: "";
     position: absolute;
-    top: -93px;
+    top: -88px;
     left: 130px;
     width: 68px;
     height: 75px;
@@ -386,8 +449,8 @@
   @media @tablet {
     content: "";
     position: absolute;
-    top: -93px;
-    left: 58px;
+    top: -68px;
+    left: 69px;
     width: 75px;
     height: 72px;
     background-image: url("../img/icon/icon-burger.svg");
@@ -398,8 +461,8 @@
   @media @desktop {
     content: "";
     position: absolute;
-    top: -93px;
-    left: 130px;
+    top: -87px;
+    left: 128px;
     width: 78px;
     height: 74px;
     background-image: url("../img/icon/icon-burger.svg");
