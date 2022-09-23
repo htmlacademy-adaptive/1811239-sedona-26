@@ -18,17 +18,26 @@
   text-align: center;
   text-transform: uppercase;
 
+  @media @tablet {
+    background-color: @white;
+  }
+
   @media @desktop {
     width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 13px;
+    background-color: @white;
   }
 }
 
 .main-nav--opened {
-  display: block;
+  position: absolute;
+  width: auto;
+  left: 0%;
+  z-index: 2;
+  right: 0;
 
   &::after {
     position: absolute;
