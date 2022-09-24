@@ -27,7 +27,35 @@
 }
 
 .button--review {
+  font-family: @font-family-base;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white;
+
   @media @tablet {
     width: 324px;
+    height: 57px;
+    margin-top: 1px;
+    padding-right: 18px;
+    padding-top: 18px;
+  }
+
+  @media @desktop {
+    width: 383px;
+    padding-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 57px;
+  }
+}
+
+.button__text {
+  @media @desktop {
+    padding-right: 10px;
+    padding-bottom: 27px;
   }
 }
