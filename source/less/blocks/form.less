@@ -21,6 +21,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
   font-weight: bold;
+  text-align: center;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
@@ -44,9 +45,15 @@
   }
 }
 
+.form__legend--fullname {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
 .form__legend-fullname-title {
   @media @tablet {
     margin-bottom: 1px;
+    padding-top: 10px;
   }
 }
 
@@ -63,6 +70,8 @@
 }
 
 .form__legend--communication {
+  margin-bottom: 13px;
+
   @media @tablet {
     padding-top: 27px;
     padding-bottom: 24px;
@@ -79,7 +88,7 @@
 
 .form__legend--sights {
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 
   @media @tablet {
     text-align: center;
@@ -98,7 +107,8 @@
   margin: 0;
   padding: 0;
   border: 0;
-  margin-top: 1px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 
   @media @desktop {
     margin-left: 3px;
@@ -106,30 +116,36 @@
 }
 
 .form__container {
-  padding: 20px;
-  padding-bottom: 7px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 1px;
+  padding-left: 20px;
 
   @media @tablet {
     border-top: none;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 1;
-    left: 0;
-    width: 320px;
-    height: 1px;
-    background-color: @border-color-photo;
-
-    @media @tablet {
-      display: none;
-    }
-
-    @media @desktop {
-      display: none;
-    }
+  @media @tablet {
+    display: none;
   }
+
+  @media @desktop {
+    display: none;
+  }
+}
+
+.form__container::before {
+  content: "";
+  position: absolute;
+  top: 1;
+  left: 0;
+  width: 320px;
+  height: 1px;
+  background-color: @border-color-photo;
+}
+
+.form__container::before:last-child {
+  display: none;
 }
 
 .form__input {
@@ -139,7 +155,7 @@
   background-color: @bg-color-body;
   border: none;
   font-family: inherit;
-  height: 23px;
+  height: 16px;
   width: 240px;
   color: @black;
 
@@ -224,7 +240,7 @@
 }
 
 .form__input--textarea {
-  min-height: 118px;
+  min-height: 111px;
   resize: none;
   font-family: inherit;
 
@@ -250,11 +266,13 @@
 }
 
 .form__group {
-  margin: 0;
   padding: 0;
-  // display: flex;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 3;
+  margin-left: 0;
 
   @media @tablet {
     margin: 0 0 15px;
@@ -268,6 +286,7 @@
 .form__group--column {
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 13px;
 }
 
 .form__group-wrapper {
@@ -294,6 +313,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 11px;
 
   @media @desktop {
     flex-wrap: wrap;
@@ -373,6 +393,8 @@
 }
 
 .form__legend-review-title {
+  padding-top: 10px;
+
   @media @desktop {
     margin-right: 71px;
   }
@@ -385,6 +407,10 @@
 }
 
 .form__legend--review {
+  margin-bottom: 18px;
+  margin-top: 3px;
+  padding-top: 5px;
+
   @media @tablet {
     position: relative;
     text-align: center;
@@ -546,6 +572,8 @@
 }
 
 .form__container--impression {
+  padding-top: 19px;
+
   @media @tablet {
     order: 3;
     width: 100%;
@@ -564,6 +592,9 @@
 }
 
 .form__container--communication {
+  padding-top: 15px;
+  padding-left: 18px;
+
   @media @tablet {
     padding-top: 20px;
     order: 2;
@@ -581,6 +612,10 @@
 }
 
 .form__container--sights {
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-bottom: 7px;
+
   @media @tablet {
     padding-top: 1px;
     order: 4;
@@ -595,6 +630,10 @@
 }
 
 .form__container--review {
+  padding-bottom: 17px;
+  padding-top: 0;
+  margin-top: -4px;
+
   @media @tablet {
     padding-top: 0;
     order: 5;
@@ -718,6 +757,8 @@
 }
 
 .form__legend-fixed-content {
+  padding-top: 10px;
+
   @media @tablet {
     display: inline-block;
     width: 300px;
@@ -750,6 +791,7 @@
 
 .form__selector-label--sights {
   width: 230px;
+  margin-bottom: 13px;
 
   @media @tablet {
     width: 205px;
@@ -765,6 +807,11 @@
 }
 
 .form__notice {
+  font-family: @font-family-base;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
 
