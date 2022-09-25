@@ -18,31 +18,37 @@
 .video__clip {
   @media @tablet {
     position: relative;
-    margin: 0 60px;
+    margin-left: 39px;
+    margin-right: 80px;
   }
 
   @media @desktop {
     position: relative;
-    margin: 0 163px;
+    margin-right: 221px;
+    margin-left: 179px;
+    margin-top: 6px;
   }
 }
 
 .video__header {
   padding-top: 5px;
   padding-right: 2px;
-  padding-bottom: 35px;
+  padding-bottom: 23px;
   padding-left: 2px;
 
   @media @tablet {
-    padding: 65px 60px;
+    padding-top: 49px;
+    padding-right: 56px;
+    padding-bottom: 76px;
+    padding-left: 43px;
   }
 
   @media @desktop {
-    padding-right: 42px;
-    padding-bottom: 63px;
-    padding-left: 42px;
-    padding-top: 50px;
     text-align: center;
+    padding-top: 54px;
+    padding-right: 56px;
+    padding-left: 40px;
+    padding-bottom: 63px;
   }
 }
 
@@ -55,9 +61,11 @@
   text-align: center;
   text-transform: uppercase;
   color: @black;
+  margin-top: 12px;
 
   @media @tablet {
     font-size: 30px;
+    padding-right: 25px;
   }
 
   @media @desktop {
@@ -66,6 +74,7 @@
     font-size: 30px;
     line-height: 26px;
     text-align: center;
+    padding-right: 30px;
   }
 }
 
@@ -79,14 +88,22 @@
   text-transform: uppercase;
   color: @font-color-base;
   padding: 0 20px;
+  padding-top: 11px;
 
   @media @tablet {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-right: 66px;
+    padding-top: 5px;
+    padding-left: 38px;
+    margin-left: 54px;
+    margin-right: 57px;
   }
 
   @media @desktop {
-    padding: 0 302px;
+    padding-left: 135px;
+    padding-right: 132px;
+    margin-right: 205px;
+    margin-left: 177px;
+    font-size: 14px;
   }
 }
 
@@ -112,7 +129,7 @@
 .video__button::before {
   position: absolute;
   content: "";
-  bottom: 71px;
+  bottom: 66px;
   left: 50%;
   transform: translateX(-16px);
   width: 48px;
@@ -124,9 +141,9 @@
   @media @tablet {
     position: absolute;
     content: "";
-    bottom: 233px;
+    bottom: 229px;
     left: 50%;
-    transform: translateX(-16px);
+    transform: translateX(-24px);
     width: 48px;
     height: 54px;
     background-image: url("../img/icon/icon-play.svg");
@@ -137,11 +154,11 @@
   @media @desktop {
     position: absolute;
     content: "";
-    bottom: 223px;
+    bottom: 229px;
     left: 50%;
-    transform: translateX(-16px);
-    width: 48px;
-    height: 54px;
+    transform: translateX(-23px);
+    width: 68px;
+    height: 55px;
     background-image: url("../img/icon/icon-play.svg");
     background-repeat: no-repeat;
     cursor: pointer;

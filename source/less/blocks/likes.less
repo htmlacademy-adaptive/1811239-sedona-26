@@ -3,6 +3,8 @@
   width: 70px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 9px;
+  padding-top: 2px;
 
   @media @desktop {
     display: flex;
@@ -18,27 +20,41 @@
   align-items: center;
   text-transform: uppercase;
   font-weight: 700;
+  padding-bottom: 13px;
+  padding-right: 16px;
+  padding-top: 10px;
+
+  @media @tablet {
+    padding-bottom: 2px;
+  }
 }
 
 .likes__like-button {
   border: none;
   background-color: @white;
   fill: rgba(0, 0, 0, 0.3);
+  padding-right: 10px;
+  padding-left: 0;
 
   @media @tablet {
     background-color: transparent;
     fill: rgba(0, 0, 0, 0.3);
+    padding-right: 11px;
+    padding-bottom: 3px;
+    padding-top: 8px;
   }
 
   @media @desktop {
     background-color: transparent;
     fill: @white;
+    padding-right: 7px;
+    padding-left: 0;
   }
 }
 
 .likes__icon-like {
-  width: 28px;
-  height: 30px;
+  width: 27px;
+  height: 40px;
   background-color: @white;
   fill: rgba(0, 0, 0, 0.3);
 
@@ -50,5 +66,37 @@
   @media @desktop {
     background-color: transparent;
     fill: @white;
+    padding-bottom: 3px;
+    padding-left: 1px;
+  }
+}
+
+.likes__like-local {
+  @media @tablet {
+    margin-left: 6px;
+  }
+
+  @media @desktop {
+    margin-left: 8px;
+  }
+}
+
+.likes__like-north {
+  @media @tablet {
+    margin-left: 14px;
+  }
+
+  @media @desktop {
+    margin-left: 14px;
+  }
+}
+
+.likes__like-devil {
+  @media @tablet {
+    margin-left: 6px;
+  }
+
+  @media @desktop {
+    margin-left: 14px;
   }
 }

@@ -64,18 +64,18 @@
       <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__container form__container--fullname">
           <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend--fullname">Представьтесь:</legend>
+            <legend class="form__legend form__legend--fullname"><span class="form__legend-fullname-title">Представьтесь:</span></legend>
             <p class="form__group form__group--fullname"> <label class="form__label" for="first-name">Имя*:</label>
               <input class="form__input" type="text" id="first-name" name="first-name" placeholder="Имя" value="Петр"
                 required="">
             </p>
             <p class="form__group form__group--fullname"> <label class="form__label" for="last-name">Фамилия*:</label>
               <input class="form__input" type="text" id="last-name" name="last-name" placeholder="Фамилия"
-                value="Иванов" required="">
+                value="Пустота" required="">
             </p>
             <p class="form__group form__group--fullname"> <label class="form__label" for="middle-name">Отчество:</label>
               <input class="form__input" type="text" id="middle-name" name="middle-name" placeholder="Отчество"
-                value="Александрович">
+                value="Викторович">
             </p>
           </fieldset>
         </div>
@@ -95,7 +95,7 @@
               </div>
               <span class="form__error-message">Ошибка, перепроверьте номер</span>
               <div class="form__group  form__group--column form__group--communication form__group--email">
-                <label class="form__label form__label--padding" for="email">Электронная почта*:</label>
+                <label class="form__label form__label-padding" for="email">Электронная почта*:</label>
                 <div class="form__input-icon-group">
                   <input class="form__input form__input--contact-info" id="email" type="email" name="email"
                     placeholder="Введите e-mail" required="">
@@ -159,12 +159,13 @@
         </div>
         <div class="form__container form__container--review">
           <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend--review">Опишите свои эмоции:</legend>
+            <legend class="form__legend form__legend--review"><span class="form__legend-review-title">Опишите свои
+                эмоции:</span></legend>
             <textarea class="form__input form__input--textarea" name="name"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
         </div>
-        <div class="form__container form__container--button">
+        <div class="form__box form__box--button">
           <button class="button button--review" type="submit">
             <span class="button__text">Отправить отзыв</span>
           </button>

@@ -17,7 +17,7 @@
 <body class="page-body">
   <header class="page-header boundary-general">
     <nav class="main-nav main-nav--opened">
-      <button class="main-nav__close-button" type="button">
+      <button class="main-nav__close-button" hidden type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="main-nav__list menu">
@@ -40,7 +40,7 @@
         width="185" height="96">
     </a>
     <div class="page-header__menu-bar">
-      <button class="page-header__open-nav-button" type="button"><span class="visually-hidden">Открыть
+      <button class="page-header__open-nav-button" hidden type="button"><span class="visually-hidden">Открыть
           меню</span></button>
     </div>
   </header>
@@ -103,7 +103,7 @@
             <section class="benefits__info-wrapper benefits__info-wrapper--white">
               <h2 class="benefits__title benefits__title--food">Еда</h2>
               <div class="benefits__number-wrapper visually-hidden"><span class="benefits__number">№7</span></div>
-              <p class="benefits__text benefits__text-recommendations">Всегда заказывайте Фирменный бургер, вы не
+              <p class="benefits__text benefits__text-recommendations-food">Всегда заказывайте Фирменный бургер, вы не
                 разочаруетесь!</p>
             </section>
           </div>
@@ -113,7 +113,8 @@
             <section class="benefits__info-wrapper benefits__info-wrapper--white">
               <h2 class="benefits__title benefits__title--gift">Сувениры</h2>
               <div class="benefits__number-wrapper visually-hidden"><span class="benefits__number">№8</span></div>
-              <p class="benefits__text benefits__text-recommendations">Не только китайского,<br class="benefits__text--interval"> но и местного
+              <p class="benefits__text benefits__text-recommendations-present">Не только китайского,<br
+                  class="benefits__text--space"> но и местного
                 производства!
               </p>
             </section>
@@ -122,12 +123,10 @@
         <li class="benefits__item benefits__item--invert">
           <div class="benefits__info benefits__info--blue">
             <div class="benefits__info-wrapper">
-              <h2 class="benefits__title benefits__title--bonus">Там есть <br class="benefits__title--space">Мост
-                дьявола</h2>
+              <h2 class="benefits__title benefits__title-devil">Там есть Мост дьявола</h2>
               <div class="benefits__number-wrapper"><span class="benefits__number benefits__number--white">№2</span>
               </div>
-              <p class="benefits__text">Да, по нему можно пройти!<br class="benefits__text--space"> Если вы осмелитесь,
-                конечно</p>
+              <p class="benefits__text benefits__text-blue">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
           </div>
           <div class="benefits__picture-wrapper">
@@ -154,29 +153,27 @@
         <li class="benefits__item line">
           <div class="benefits__info  benefits__info--gray">
             <div class="benefits__info-wrapper benefits__info-wrapper--gray">
-              <h2 class="benefits__title benefits__title--bonus">Небольшая<br class="benefits__title--space"> площадь
-              </h2>
-              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number">№3</span></div>
-              <p class="benefits__text">Все интересные места находятся очень близко</p>
+              <h2 class="benefits__title benefits__title--gray">Небольшая площадь</h2>
+              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number-gray">№3</span></div>
+              <p class="benefits__text-gray benefits__text">Все интересные места находятся очень близко</p>
             </div>
           </div>
         </li>
         <li class="benefits__item line">
           <div class="benefits__info  benefits__info--gray">
             <div class="benefits__info-wrapper benefits__info-wrapper--gray">
-              <h2 class="benefits__title benefits__title--bonus">Красивая<br class="benefits__title--space"> дорога</h2>
-              <div class="benefits__number-wrapper"><span class="benefits__number">№4</span></div>
-              <p class="benefits__text">Ехать в седону из лас-вегаса совсем<br class="benefits__title--space"> не
-                скучно!</p>
+              <h2 class="benefits__title benefits__title--gray-road">Красивая дорога</h2>
+              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number-gray">№4</span></div>
+              <p class="benefits__text benefits__text-vegas">Ехать в седону из лас-вегаса совсем не скучно!</p>
             </div>
           </div>
         </li>
         <li class="benefits__item">
           <div class="benefits__info">
             <div class="benefits__info-wrapper benefits__info-wrapper--gray">
-              <h2 class="benefits__title benefits__title--bonus">Мало<br class="benefits__title--space"> туристов</h2>
-              <div class="benefits__number-wrapper"><span class="benefits__number">№5</span></div>
-              <p class="benefits__text">Большинство едет в гранд каньон и толпится там</p>
+              <h2 class="benefits__title benefits__title--gray-tourist">Мало туристов</h2>
+              <div class="benefits__number-wrapper"><span class="benefits__number benefits__number-gray">№5</span></div>
+              <p class="benefits__text benefits__text-tourist">Большинство едет в гранд каньон и толпится там</p>
             </div>
           </div>
         </li>
@@ -196,6 +193,13 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6785479.561442289!2d-120.66897657542702!3d33.858157758935405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1661372191628!5m2!1sru!2sru"
         width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- <picture>
+        <source media="(min-width:1200px)" srcset="img/map/map-desktop.jpg">
+        <source media="(min-width:768px)" srcset="img/map/map-tablet.jpg">
+        <source media="(min-width:320px)" srcset="img/map/map-mobile.jpg">
+        <img class="map__picture" src="img/map/map-mobile.jpg" width="375" height="375"
+          alt="Интерактивная карта Sedona">
+      </picture> -->
     </div>
   </main>
   <footer class="page-footer boundary-general">
