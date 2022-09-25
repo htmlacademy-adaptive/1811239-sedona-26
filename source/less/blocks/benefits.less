@@ -654,8 +654,6 @@
 }
 
 .benefits__info--white:first-child {
-  // padding-bottom: 22px;
-
   @media @tablet {
     padding-bottom: 0;
   }
@@ -724,14 +722,6 @@
 
 .benefits__item {
   @media @tablet {
-    &__item:first-child {
-      grid-column: 1/4;
-    }
-
-    &__item:last-child {
-      border-bottom: none;
-    }
-
     &:nth-child(1) {
       // order: 1;
       display: flex;
@@ -773,6 +763,18 @@
     &:nth-child(1) {
       display: flex;
     }
+  }
+}
+
+.benefits__item:first-child {
+  @media @tablet {
+    grid-column: 1/4;
+  }
+}
+
+.benefits__item:last-child {
+  @media @tablet {
+    border-bottom: none;
   }
 }
 
