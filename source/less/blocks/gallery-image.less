@@ -31,11 +31,11 @@
   font-family: @font-family-base;
   font-weight: 400;
   font-size: @font-size-base;
-  line-height: @line-height-base;
-  margin: 0;
+  line-height: 24px;
   padding: 0;
   color: @font-color-base;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
+  margin-top: 0;
 
   @media @tablet {
     margin-top: 1px;
@@ -43,18 +43,19 @@
 
   @media @desktop {
     color: @white;
+    margin-bottom: 10px;
   }
 }
 
 .gallery-image__footer {
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 15px;
+  padding-bottom: 5px;
 
   @media @tablet {
-    padding-top: 12px;
+    padding-top: 9px;
+    padding-right: 19px;
     padding-bottom: 4px;
     padding-left: 20px;
-    padding-right: 20px;
     background-color: @bg-color-body;
     display: flex;
     justify-content: space-between;
@@ -72,17 +73,17 @@
 }
 
 .gallery-image__title {
-  margin: 0;
   padding: 0;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 10px;
   font-weight: 700;
   line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media @tablet {
-    margin-top: 10px;
-    margin-bottom: 1px;
+    margin-top: 9px;
+    margin-bottom: -2px;
   }
 
   @media @desktop {
@@ -90,6 +91,14 @@
     padding: 0;
     font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    padding-left: 1px;
+    margin-bottom: 2px;
+    padding-top: 5px;
+  }
+}
+
+.gallery-image__title-local {
+  @media @desktop {
+    margin-top: 8px;
   }
 }
