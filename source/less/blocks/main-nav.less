@@ -1,5 +1,5 @@
 .main-nav {
-  position: relative;
+  position: absolute;
   width: auto;
   margin: 0;
 
@@ -33,7 +33,7 @@
 }
 
 .main-nav--opened {
-  position: inherit;
+  position: absolute;
   width: auto;
   left: 0%;
   z-index: 2;
@@ -107,3 +107,12 @@
     opacity: 0.3;
   }
 }
+
+.main-nav--nojs {
+  position: relative;
+}
+
+
+// .main-nav--nojs .main-nav__logo {
+//   padding-top: 220px;
+// }
