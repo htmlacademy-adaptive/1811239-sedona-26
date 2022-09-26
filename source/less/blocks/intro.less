@@ -33,6 +33,7 @@
     background-color: @bg-color-main-button;
     width: 1200px;
     margin: 0 auto;
+    height: 518px;
     background-image: url("../img/background/bg-border-desktop.svg"),
       url("../img/background/bg-mountain-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
@@ -41,6 +42,7 @@
       background-image: url("../img/background/bg-border-desktop.svg"),
         url("../img/background/bg-mountain-desktop@2x.jpg");
       background-size: 1200px, cover;
+      height: 518px;
     }
   }
 }
@@ -65,7 +67,7 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    height: 357px;
+    height: 301px;
     background-position: left bottom, left bottom;
     background-size: contain, cover;
   }
@@ -74,6 +76,10 @@
 .intro__wrapper {
   text-align: center;
   padding-top: 90px;
+
+  @media @desktop {
+    padding-top: 36px;
+  }
 }
 
 .intro__wrapper--inner {
@@ -100,7 +106,7 @@
   }
 
   @media @desktop {
-    padding-top: 65px;
+    padding-top: 6px;
     padding-right: 4px;
   }
 }
